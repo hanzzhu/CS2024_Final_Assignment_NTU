@@ -25,43 +25,37 @@
     <!-- Style css -->
     <link href="css/style.css" rel="stylesheet">
        
-        <style>
+    <style>
         header{
-            display:flex;
-            flex-direction:row;
             align-items: center;
-            position:fixed;
             width:100%;
         }
-        .header{
-            display: flex;
-            flex-direction: row;
-        }
-        .header a {
+     
+        header a {
             margin:20px;
-            font-size: larger;
             text-decoration: none;
             color: #79c9f4;
-            font-family: header;
             font-weight:700;
         }
 
-        img.logo {
-        padding: 20px;
-        }
+       header a:hover {
+        color: #FAAD17;
+       }
 
-       .header .col-6 {
-            margin-left: 100px;
+       img.logo {
+        padding: 20px;
+       }
+
+       header .col-6 {
+           
             margin-top: 20px;
         }
                 
         .dropbtn {
           margin: 20px 20px 0 20px;
-          
-          font-size: larger;
+        
           text-decoration: none;
           color: #79c9f4;
-          font-family: header;
           border: none;
           background: none;
         }
@@ -139,8 +133,7 @@
         <title>Smart Tuition</title>
     </head>
     <body>
-          <!-- Start of Header -->
-        <header>
+    
         <div id="navbar_top"> 
             <div class = "header">
                 <div class="col-3">
@@ -171,80 +164,77 @@
                 </div>    
             </div>
         </div>
-        </header>
-        <!-- End of header -->
+
         <div>
-        </div>    
-
-        <!-- Start of Footer -->
-        <footer id="footer" class="footer">
-
-            <div class="footer-top">
-                <div class="container">
-                    <div class="row gy-4">
-                        <div class="row align-items-center">
-                            <div class="col-md-4">
+            <footer id="footer" class="footer">
         
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row gy-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+            
+                                </div>
+                                <div class="col-md-4 footer-logo">
+                                    <a href="index.html" class="logo d-flex align-items-center">
+                                        <img src="assets/img/logo.png" alt="">
+                                    </a><br/>
+                                </div>
+                                <div class="col-md-4">
+            
+                                </div>
+                                <hr/>
                             </div>
-                            <div class="col-md-4 footer-logo">
-                                <a href="index.html" class="logo d-flex align-items-center">
-                                    <img src="assets/img/logo.png" alt="">
-                                </a><br/>
+            
+                            <div class="col-lg-4 col-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <a href="about.html">About</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a href="subject.html">Subjects</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a href="rate.html">Tuition Rate</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a href="testimonial.html">Testimonial</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a href="faq.html">FAQ</a></li>
+                                    <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+                                </ul>
                             </div>
-                            <div class="col-md-4">
-        
+            
+                            <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
+                                <div class="col-lg-4 col-sm-8">
+                                </div>
+                                <div class="col-lg-4 col-sm-2">
+                                    <h4>Contact Us</h4>
+                                    <p>
+                                        1 Nanyang Ave<br>#01-01<br>Singapopre 123456<br><br>
+                                        <strong>Phone:</strong> <br/>+65 9123 4567<br>
+                                        <strong>Email:</strong> info@smarttuition.sg<br>
+                                    </p>
+                                </div>
+            
+            
                             </div>
-                            <hr/>
+                            <div class="col-lg-4 footer-info" style="align-items: center">
+                                <div class="col-8">&nbsp;</div>
+                                <div> <div id="map" style="height: 200px;"></div>
+                                    <script
+                                            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+                                            async
+                                    ></script></div>
+                                <div class="col-4 social-links mt-3">
+                                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                                    <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                                </div><br/>
+                                <p><b>Copyright @ Smart Tuition</b></p>
+                            </div>
+            
                         </div>
-        
-                        <div class="col-lg-4 col-6 footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                                <li><i class="bi bi-chevron-right"></i> <a href="about.html">About</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a href="subject.html">Subjects</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a href="rate.html">Tuition Rate</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a href="testimonial.html">Testimonial</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a href="faq.html">FAQ</a></li>
-                                <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
-                            <div class="col-lg-4 col-sm-8">
-                            </div>
-                            <div class="col-lg-4 col-sm-2">
-                                <h4>Contact Us</h4>
-                                <p>
-                                    1 Nanyang Ave<br>#01-01<br>Singapopre 123456<br><br>
-                                    <strong>Phone:</strong> <br/>+65 9123 4567<br>
-                                    <strong>Email:</strong> info@smarttuition.sg<br>
-                                </p>
-                            </div>
-        
-        
-                        </div>
-                        <div class="col-lg-4 footer-info" style="align-items: center">
-                            <div class="col-8">&nbsp;</div>
-                            <div> <div id="map" style="height: 200px;"></div>
-                                <script
-                                        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-                                        async
-                                ></script></div>
-                            <div class="col-4 social-links mt-3">
-                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
-                            </div><br/>
-                            <p><b>Copyright @ Smart Tuition</b></p>
-                        </div>
-        
                     </div>
                 </div>
-            </div>
-        
-        </footer>
-        <!-- End Footer -->
+            
+            </footer>
+        </div>
+            <!-- End Footer -->
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -262,6 +252,8 @@
                 });
             });
         </script>
+
+
         
     </body>
 
