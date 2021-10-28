@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,6 +35,8 @@
     <!-- //web fonts -->
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/footer-style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="assets/js/map.js"></script>
 </head>
 <body>
 <!-- ======= Footer ======= -->
@@ -68,21 +71,11 @@
                         <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 footer-info" style="align-items: center">
-                    <div class="col-8">&nbsp;</div>
-                    <br/><br/><br/><br/><br/><br/><br/><br/>
-                    <div class="col-4 social-links mt-3">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
-                    </div><br/>
-                    <p><b>Copyright @ Smart Tuition</b></p>
-                </div>
+
                 <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
                     <div class="col-lg-4 col-sm-8">
                     </div>
-                    <div class="col-lg-4 col-sm-2" style="float:right">
+                    <div class="col-lg-4 col-sm-2">
                         <h4>Contact Us</h4>
                         <p>
                             1 Nanyang Ave<br>#01-01<br>Singapopre 123456<br><br>
@@ -92,6 +85,21 @@
                     </div>
 
 
+                </div>
+                <div class="col-lg-4 footer-info" style="align-items: center">
+                    <div class="col-8">&nbsp;</div>
+                    <div> <div id="map" style="height: 200px;"></div>
+                        <script
+                                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+                                async
+                        ></script></div>
+                    <div class="col-4 social-links mt-3">
+                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+                    </div><br/>
+                    <p><b>Copyright @ Smart Tuition</b></p>
                 </div>
 
             </div>
