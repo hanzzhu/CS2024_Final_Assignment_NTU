@@ -1,10 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- requires this line viewport bootstrap indicates responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Convert .jpg/.png into .ico (ie. favicon.ico) for  site identity icon from https://favicon.io/favicon-converter/ save images folder -->
+    <link href="assets/img/logo.png" rel="shortcut icon" type="image/x-icon">
 
-</body>
+    <!--Copy link from google font>select this style>view your selected famalies>copy embeded code  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <!--Copy link from font awesome cdn website  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Style css -->
+    <link href="css/style.css" rel="stylesheet">
+       
+        <style>
+        header{
+            display:flex;
+            flex-direction:row;
+            align-items: center;
+            position:fixed;
+            width:100%;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+        }
+        .header a {
+            margin:20px;
+            font-size: larger;
+            text-decoration: none;
+            color: #79c9f4;
+            font-family: header;
+            font-weight:700;
+        }
+
+        img.logo {
+        padding: 20px;
+        }
+
+       .header .col-6 {
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+                
+        .dropbtn {
+          margin: 20px 20px 0 20px;
+          
+          font-size: larger;
+          text-decoration: none;
+          color: #79c9f4;
+          font-family: header;
+          border: none;
+          background: none;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        button.dropbtn {
+            font-weight: 700;
+        }
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          
+          min-width: 160px;
+          border: 1px solid rgba(0,0,0,.15);
+          z-index: 1;
+          margin-left:20px;
+        }
+        
+        .dropdown-content a {
+        color: #79c9f4;
+          margin: 0px;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #79c9f4;
+            color:#ffffff;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-content a {
+          margin: 0px;
+        } 
+        
+        .header-btn {
+        background: #FAAD17 !important;
+        color: #fff !important;
+        margin-top:35px !important;
+        }
+
+        a.header-btn.btn {
+        font-weight: normal;
+        }
+
+        a.header-btn.btn:hover {
+        background-color: #79c9f4 !important;
+        }
+
+        #navbar_top.fixed-top {
+            background-color: #ffffff;
+            -webkit-box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
+            -moz-box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.68);
+            box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
+        }
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
+        
+        </style>
+        
+        <title>Smart Tuition</title>
+    </head>
+    <body>
+    
+        <div id="navbar_top"> 
+            <div class = "header">
+                <div class="col-3">
+                    <a href="#"><img src ="smarttuitionlogo.png" class = logo style = "height:100px;"></a>
+                </div>
+                <div class="col-6">
+                    <a href="#">About</a>
+                    <li class="dropdown">
+                        <button class="dropbtn">Subjects <i class="fas fa-angle-down"></i></button>
+                        <div class="dropdown-content">
+                          <a href="#">Maths</a>
+                          <a href="#">English</a>
+                          <a href="#">Science</a>
+                          
+                        </div>
+                    </li>
+                    <a href="#">Tuition Rate</a>
+                    <a href="#">Testimonial</a>
+                    <li class="dropdown">
+                        <button class="dropbtn">Contact <i class="fas fa-angle-down"></i></button>
+                        <div class="dropdown-content">
+                          <a href="#">FAQ</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="col-3">
+                 <a class="header-btn btn" href="#">Register</a>
+                </div>    
+            </div>
+        </div>
+
+        <footer>
+           
+        </footer>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 50) {
+                        document.getElementById('navbar_top').classList.add('fixed-top');
+                        // add padding top to show content behind navbar
+                        navbar_height = document.querySelector('.navbar').offsetHeight;
+                        document.body.style.paddingTop = navbar_height + 'px';
+                    } else {
+                        document.getElementById('navbar_top').classList.remove('fixed-top');
+                        // remove padding top from body
+                        document.body.style.paddingTop = '0';
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+
 </html>
