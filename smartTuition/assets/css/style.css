@@ -1,3 +1,59 @@
+:root  {
+  --theme-color: #79c9f4 !important;
+  --secondary-color: #FAAD17 !important;
+  --opposite-color: #fdc800;
+  --text-color: rgb(100, 100, 100);
+  --title-color: #1A1D2D;
+  --white-color: #ffffff;
+  --light-bg-color: #f6f6f6; }
+:root {
+  --primary-color: #FAAD17 !important;
+  --secondary-color: #79c9f4 !important;
+  --font-color: #666;
+  --bg-color: #fff;
+  --heading-color: #3f3a64;
+  --border-radius: 8px;
+  --border-radius-full: 35px;
+  --border-color: transparent;
+  --border-color-light: rgb(235, 228, 228);
+  --nav-color: #292922;
+  --dropdown-color: #fff;
+  --iframe-filter: grayscale(0%);
+  --bg-grey: #f7f7f7;
+  --bg-lightgrey: #f8f9fa;
+  --layer: rgba(0, 0, 0, 0.45); }
+
+/* ============ button ============ */
+.btn-secondary {
+  color: #212529 !important;
+  background-color: #fdc800 !important;
+  border-color: #fdc800!important;
+  }
+
+/* ============ top navigation ============ */
+.w3l-top-menu-1 .accounts li a {
+  color: #3a3a3c !important;
+  }
+
+/*=== map ===*/
+.map-responsive{
+	overflow: hidden;
+	padding-bottom: 80%;
+	position: relative;
+	height: 0;
+}
+
+.map-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+
+}
+  
+  
+
 .footer {
   background: rgba(246, 249, 255, 0.08);
   padding: 0 0 30px 0;

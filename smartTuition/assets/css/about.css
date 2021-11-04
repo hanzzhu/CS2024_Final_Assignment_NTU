@@ -1,0 +1,188 @@
+.w3l-about-breadcrum .breadcrum-bg {
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(121, 201, 244, 0.8)), url(../img/students-banner.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed; }
+
+/* ============ statistics============ */
+
+.w3l-stats {
+    background: url(../img/statistics.jpeg) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed; }
+      
+.w3l-stats:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: linear-gradient(180deg, #FAAD17 1%, #79C9F4  99%);
+    opacity: .8; }
+      
+.w3l-stats .title-big {
+    color: #fff; }
+      
+.w3l-stats .title-small {
+    color: #fff; }
+      
+.stats_info {
+    text-align: center;
+    padding: 0 30px; }
+      
+.stats_info h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    text-transform: capitalize; }
+      
+p.counter {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    margin: 30px 0;
+    display: inline-block;
+    opacity: 1; }
+      
+span.plus {
+    font-size: 45px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 6px; }
+      
+@media only screen and (max-width: 1080px) {
+    .stats_info {
+        padding: 0 10px; }
+    p.counter {
+        font-size: 40px; }
+    span.plus {
+        font-size: 35px; }
+    .stats_info h3 {
+        font-size: 17px; } }
+      
+@media only screen and (max-width: 736px) {
+    p.counter {
+        margin: 0px 0px;
+        line-height: 60px; } }
+      
+@media only screen and (max-width: 415px) {
+    p.counter {
+        font-size: 35px;
+        line-height: 50px; }
+    span.plus {
+        font-size: 30px;
+        margin-left: 0; } }
+      
+@media only screen and (max-width: 375px) {
+    .stats_info {
+        padding: 0 15px; }
+    .stats_info h3 {
+        font-size: 16px; } }
+
+/* ============ teachers team ============ */
+.teams-1 .team-img img {
+    width: 100%; 
+    height: 400px;}
+
+
+
+
+/* ============ register form ============ */
+.register-photo {
+    background: #f1f7fc;
+    padding: 80px 0;
+  }
+  
+  .register-photo .image-holder {
+    display: table-cell;
+    width: auto;
+    background: url(../../assets/img/happy-students.jpg);
+    background-size: cover;
+  }
+  
+  .register-photo .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .register-photo form {
+    display: table-cell;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    color: #505e6c;
+  }
+  
+  @media (max-width:991px) {
+    .register-photo form {
+      padding: 40px;
+    }
+    
+  }
+  
+  .register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .register-photo form .form-control {
+    background: #f7f9fc;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 6px;
+    height: 40px;
+  }
+  
+  .register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  .register-photo form .btn-primary {
+    background: #FAAD17;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important;
+  }
+  
+  .register-photo form .btn-primary:hover, .register-photo form .btn-primary:active {
+    background: #79c9f4;
+  }
+  
+  .register-photo form .btn-primary:active {
+    transform: translateY(1px);
+  }
+  
+  .register-photo form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
+  }
