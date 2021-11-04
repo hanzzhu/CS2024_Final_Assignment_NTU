@@ -48,7 +48,37 @@
 .w3l-main-slider .banner-top1 {
     background: url(../img/subject-science/science_banner2.jpg) no-repeat;
     background-size: cover; }
+.breadcrum-bg {
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(1, 30, 63, 0.62), rgba(3, 12, 93, 0.68)), url(../img/subject-science/chem_banner.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed; }
+.breadcrum-bg h2 {
+    font-size: 44px;
+    color: #fff;
+    font-weight: 600; }
 
+.breadcrum-bg p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px; }
+
+.breadcrum-bg p a {
+    font-size: 16px;
+    color: var(--primary-color); }
+
+.breadcrum-bg p a:hover {
+    text-decoration: underline;
+    color: #fff; }
+
+@media (max-width: 736px) {
+    .breadcrum-bg h2 {
+        font-size: 40px; } }
+
+@media (max-width: 600px) {
+    .breadcrum-bg h2 {
+        font-size: 35px; } }
 banner-view-chem
 /* ============ button ============ */
 .btn-secondary {
