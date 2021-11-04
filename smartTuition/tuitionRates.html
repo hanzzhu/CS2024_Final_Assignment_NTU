@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-starter.css">    
     <link rel="stylesheet" href="assets/css/schedule.css">
-    <link rel="stylesheet" href="assets/css/subject.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
     <!-- web fonts -->
     <link href="//fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
@@ -65,7 +65,7 @@
   <section class="w3l-bootstrap-header">
       <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
           <div class="container">
-              <a class="navbar-brand" href="#index.html">
+              <a class="navbar-brand" href="index.html">
                   <img src="assets/img/logo.png" alt="Smart Tuition Logo" title="Smart Tuition Logo" style="height:35px;" />
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -136,39 +136,6 @@
         </div>
     </div>
     </div>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.owl-one').owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: false,
-                responsiveClass: true,
-                autoplay: false,
-                autoplayTimeout: 5000,
-                autoplaySpeed: 1000,
-                autoplayHoverPause: false,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    480: {
-                        items: 1,
-                        nav: false
-                    },
-                    667: {
-                        items: 1,
-                        nav: true
-                    },
-                    1000: {
-                        items: 1,
-                        nav: true
-                    }
-                }
-            })
-        })
-    </script>
 </section>
     <!--Page content-->
     <section class="services-12" id="course">
@@ -473,27 +440,33 @@
   <!-- Smooth scrolling -->
     <!-- <script src="assets/js/smoothscroll.js"></script> -->
     <script src="assets/js/owl.carousel.js"></script>
-    <!-- script for tesimonials carousel slider -->
     <script>
         $(document).ready(function () {
-            $("#owl-demo1").owlCarousel({
+            $('.owl-one').owlCarousel({
                 loop: true,
-                margin: 20,
-                nav: false,
+                margin: 0,
+                nav: true,
                 responsiveClass: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: false,
                 responsive: {
                     0: {
                         items: 1,
                         nav: false
                     },
-                    768: {
-                        items: 2,
+                    480: {
+                        items: 1,
                         nav: false
                     },
+                    667: {
+                        items: 1,
+                        nav: true
+                    },
                     1000: {
-                        items: 3,
-                        nav: false,
-                        loop: false
+                        items: 1,
+                        nav: true
                     }
                 }
             })
@@ -507,22 +480,6 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            window.addEventListener('scroll', function () {
-                if (window.scrollY > 50) {
-                    document.getElementById('navbar_top').classList.add('fixed-top');
-                    // add padding top to show content behind navbar
-                    navbar_height = document.querySelector('.navbar').offsetHeight;
-                    document.body.style.paddingTop = navbar_height + 'px';
-                } else {
-                    document.getElementById('navbar_top').classList.remove('fixed-top');
-                    // remove padding top from body
-                    document.body.style.paddingTop = '0';
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
