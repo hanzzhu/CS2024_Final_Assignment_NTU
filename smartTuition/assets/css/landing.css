@@ -25,7 +25,11 @@
     background-color: #FAAD17 !important;
     border-color: #FAAD17!important;
     }
-
+ .btn-secondary:hover {
+      color: #ffffff !important;
+      background-color: #e91e63 !important;
+      border: none !important;
+ }    
 
 .heading {
     max-width: 750px; }
