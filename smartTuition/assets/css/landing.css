@@ -350,6 +350,7 @@ button.owl-next {
     width: auto;
     background: url(../../assets/img/happy-student-free-trial.jpg);
     background-size: cover;
+    border-radius: 20px 0 0 20px;
   }
   
   .register-photo .form-container {
