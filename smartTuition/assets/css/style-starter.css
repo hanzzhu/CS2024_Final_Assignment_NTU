@@ -9601,9 +9601,8 @@ select {
   cursor: pointer;
   font-family: 'Work Sans', sans-serif; }
 
-a,
-a:hover {
-  text-decoration: none; }
+a {
+  text-decoration: none !important; }
 
 iframe {
   border: none; }
@@ -9793,7 +9792,7 @@ h4.sub-title {
     display: inline-block; }
   .w3l-top-menu-1 .accounts li span.fa {
     padding-right: 5px;
-    color: var(--opposite-color); }
+    color: #3a3a3c; }
   .w3l-top-menu-1 .accounts li {
     display: inline-block;
     margin: 0 24px;
@@ -11116,7 +11115,7 @@ button.owl-next {
   /*--//responsive--*/ }
   .w3l-feature-3 .grid.top-bottom {
     margin-top: -100px;
-    z-index: 10;
+    z-index: 1;
     position: relative; }
   .w3l-feature-3 span.number img {
     vertical-align: -webkit-baseline-middle; }
