@@ -22,8 +22,8 @@
 /* ============ button ============ */
 .btn-secondary {
     color: #212529 !important;
-    background-color: #fdc800 !important;
-    border-color: #fdc800!important;
+    background-color: #FAAD17 !important;
+    border-color: #FAAD17!important;
     }
 
 
@@ -43,7 +43,7 @@
 
 .section-title h3:after {
   content: " ";
-  border-bottom: 3px solid #FF9933;
+  border-bottom: 3px solid #FAAD17;
   height: 3px;
   display: block;
   position: relative;
