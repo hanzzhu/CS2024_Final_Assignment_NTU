@@ -35,9 +35,150 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        
+    <style>
+        .w3l-contact-breadcrum .breadcrum-bg {
+            background-size: cover;
+            background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(121, 201, 244, 0.8)), url(assets/img/imageedit_1_4613483821.jpg);
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: center;
+            background-attachment: inherit;
+        }
+        .mt-3 {
+            margin-top: 3rem!important;
+        }
+        .contact-title h2 {
+            font-weight: 600;
+            color: var(--title-color);
+        }
+
+        section.pt-125.pb-125.send-message.bg_white {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+
+        .map {
+            display: flex;
+            justify-content: center;
+        }
+
+        /*.section-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }*/
+        
+        .section-title {
+            margin-top: 4rem;
+        }
+        .region {
+            display: flex;
+            justify-content: center;
+            padding-top: 3rem;
+        }
+        .region h2 {
+            font-weight: 600;
+        }
+        .region h2:after{
+                content: " ";
+                border-bottom: 3px solid #FAAD17;
+                height: 3px;
+                display: block;
+                position: relative;
+                top: 4px;
+                width: 60px !important;
+                margin: auto;
+        }
+        .locations h5 {
+            width: fit-content;
+            padding: 10px;
+            text-align: center;
+            background-color: #FAAD17;
+            color: #ffffff;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px #3a3b3c;
+            border-radius: 10px;
+        }
+        .locations {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .locations .card{
+            border: none;
+        }
+        .locations h5{
+          
+            font-weight: 600;
+            margin-left: 10%;
+        }
+
+       
+        .locations p.card-text {
+      
+            margin-top:1rem;
+            margin-left: 10%;
+        }
+
+        .locations .fa, .locations .fas {
+            font-weight: 900;
+            color: #FAAD17;
+        }
+
+        .north-location, .east-location {
+            background-color: #79c9f4;
+        }
+
+        .north-location .card.h-100, .east-location .card.h-100 {
+            background-color: #79c9f4;
+        }
+
+        .row.cont-main-top {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        button.btn.btn-theme2 {
+            background-color: #FAAD17;
+            color: #ffffff;
+            border:none;
+        }
+        
+        button.btn.btn-theme2:hover {
+            background-color: #e91e63;
+            color: #ffffff;
+            border:none;
+        }
+
+        textarea#w3lMessage {
+            margin-top: 0;
+        }
+
+        .contacts12-main h2 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+                
+        .contact .col-lg-6.offset-lg-1 {
+            -webkit-box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
+            -moz-box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.68);
+            box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
+            border-radius: 20px;
+            padding: 50px;
+        }
+
+        .contact-form label:after {
+            content: " *";
+            color: red;
+        }
+
+
+    </style>    
+
+
+
     <title>Smart Tuition</title>
 </head>
-<body>
+<body class="contact">
     <!-- Top Menu -->
     <section class="w3l-top-menu-1">
         <div class="top-hd">
@@ -106,96 +247,307 @@
     </div>
   </div>
 </section>
-<!-- contact -->
-<section class="w3l-contacts-12" id="contact">
-    <div class="contact-top pt-5">
-        <div class="container py-md-3">
-            
-            <div class="row cont-main-top">
-               
-                <!-- contact address -->
-                <div class="contact col-lg-4">
-                    <div class="cont-subs">
-                        <div class="cont-add">
-                            
-                           <div class="cont-add-rgt">
-                            <h4>Address:</h4>
-                            <p class="contact-text-sub">PO Box 1212, California, US</p>
-                        </div>
-                        <div class="cont-add-lft">
-                            <span class="fa fa-map-marker" aria-hidden="true"></span>
-                       </div>
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section class="pt-125 pb-125 send-message bg_white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-title">
+                        <h2>Send Us A Message</h2>
+                        <h4>We will get back to you within 24 hours.</h4>
                     </div>
-                        <div class="cont-add add-2">
-                            
-                           <div class="cont-add-rgt">
-                            <h4>Email:</h4>
-                            <a href="mailto:info@example.com">
-                                <p class="contact-text-sub">info@example.com</p>
-                            </a>
-                        </div>
-                        <div class="cont-add-lft">
-                            <span class="fa fa-envelope" aria-hidden="true"></span>
-                       </div>
+                    <div class="row ">
+                        <img src="assets/img/shutterstock_713577070.jpg" width="100%">
                     </div>
-                        <div class="cont-add">
-                           
-                            <div class="cont-add-rgt">
-                                 <h4>Phone:</h4>
-                                 <a href="tel:+7-800-999-800">
-                                    <p class="contact-text-sub">+7-800-999-800</p>
-                                 </a>
-                            </div>
-                            <div class="cont-add-lft">
-                                <span class="fa fa-phone" aria-hidden="true"></span>
-                           </div>
-                        </div>
-                        <div class="cont-add add-3">
-                           
-                            <div class="cont-add-rgt">
-                                 <h4>Find Us On</h4>
-                                 <div class="main-social-1 mt-2">
-                                    <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
-                                    <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
-                                    <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
-                                    <a href="#google-plus" class="google-plus"><span class="fa fa-google-plus"></span></a>
-                                    <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="contact-form">
+                        <form id="form" name="form" method="post" action="#">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" class="form-control"  required>
                                 </div>
+                                <div class="col-md-6">
+                                    <label for="number">Phone number</label>
+                                    <input type="number" min="0.00" class="form-control"  required />
+                                </div>
+                                <div class="col-md-12 mt-20 mt-md-0">
+                                    <label for="email-address">Email</label>
+                                    <input type="email" id='email-address' name="email" class="form-control" required>
+                                </div>
+                                <div class="col-md-12 mt-20">
+                                    <label for="form-text">Message</label>
+                                    <textarea cols="30" rows="3" name="message" id="form-text"
+                                        class="form-control pt-15" required></textarea>
+                                </div>
+
+                                <div class="col-12 mt-3 ">
+                                    <button type="submit" class="btn btn-theme2">Submit Now</button>
+                                </div>
+
                             </div>
-                            <div class="cont-add-lft">
-                               
-                           </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
-                <!-- //contact address -->
-                 <!-- contact form -->
-                 <div class="contacts12-main col-lg-8 mt-lg-0 mt-5">
-                   
-                    <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="main-input">
-                        <div class="top-inputs d-grid">
-                            <input type="text" placeholder="Name" name="w3lName" id="w3lName" required="">
-                            <input type="email" name="email" placeholder="Email" id="w3lSender" required="">
-                        </div>
-                        <input type="text" placeholder="Phone Number" name="w3lName" id="w3lName" required="">
-                        <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required=""></textarea>
-                        <div class="text-right">
-                            <button type="submit" class="btn btn-theme2">Submit Now</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- //contact form -->
             </div>
         </div>
-        <!-- map -->
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.7281066703!2d-0.24168144921176335!3d51.5287718408761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1569921526194!5m2!1sen!2sin"
-                frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-        <!-- //map -->
+    </section>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1iDfsTaR55EClvervRmhZbNSOWBdnbQnR" width="88%" height="480"></iframe>
     </div>
-</section>
+<div class="section-title">
+    <div class="west-location">
+    <div class="region">
+    <h2>West</h2>
+    </div>
+    <div class="locations">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h5 class="card-title">Jurong Point</h5>
+                            <p class="card-text">
+                                <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                63 Jurong West Central 3<br>
+                                #B1-05/06<br>
+                                Singapore 648331<br><br> 
+                                <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                <a href="#">+65 6898 3233</a>
+                              
+                            </p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h5 class="card-title">Jurong West Blk 749</h5>
+                            <p class="card-text">
+                                <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                749 Jurong West St 73<br>
+                                #B1-145<br>
+                                Singapore 640749<br><br>
+                                <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                <a href="#">+65 6793 3233</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h5 class="card-title">Westgate</h5>
+                            <p class="card-text">
+                                <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                3 Gateway Drive<br>
+                                #04-19/20<br>
+                                Singapore 608532<br><br>
+                                
+                                <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                <a href="#">+65 6686 3233</a>
+                            </p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        </div>
+     </div>
+    <div class="north-location">    
+        <div class="region">
+        <h2>North</h2>
+        </div>
+        <div class="locations">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">AMK Hub</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    53 Ang Mo Kio Ave 3<br>
+                                    #03-05/06<br>
+                                    Singapore 569933 <br><br>
+                                    <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                    <a href="#">+65 6753 3533</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">Northpoint City I</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    930 Yishun Ave 2<br>
+                                    #02-29<br>
+                                    Singapore 769098 <br><br>
+                                    <i class="fas fa-phone-alt"></i> Telephone<br>
+                                    <a href="#">+65 6481 3233</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">Northpoint City II</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    930 Yishun Ave 2<br>
+                                    #02-166<br>
+                                    Singapore 769098 <br><br>
+                                    <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                    <a href="#">+65 6353 3233</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="central-location">   
+        <div class="region">
+        <h2>Central</h2>
+        </div>
+        <div class="locations">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">Bugis</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    116 Middle Road<br>
+                                    ICB Enterprise House #07-02<br>
+                                    Singapore 188972<br><br>
+                                    <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                    <a href="#">+65 6898 3233</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">Tiong Bahru Plaza</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    302 Tiong Bahru Road<br>
+                                    #02-102/103/104<br>
+                                    Singapore 168732<br><br> 
+                                    <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                    <a href="#">+65 6272 3233</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">Aperia</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    2 Kallang Ave<br>
+                                    #03-11/12/13/14<br>
+                                    Singapore 339511<br><br>
+                                    <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                    <a href="#">+65 6899 3233</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="east-location">
+        <div class="region">
+        <h2>East</h2>
+        </div>
+        <div class="locations">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">Bedok </h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    209 New Upper Changi Road<br>
+                                    #04-635<br>
+                                    Singapore 460209 <br><br>
+                                    <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                    <a href="#">+65 6245 3233</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">Eastpoint Mall</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    3 Simei Street 6<br>
+                                    #03-03<br>
+                                    Singapore 528833<br><br> 
+                                    <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                    <a href="#">+65 6786 3233</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="card-content">
+                                <h5 class="card-title">Parkway Parade</h5>
+                                <p class="card-text">
+                                    <i class="fas fa-map-marker-alt"></i> Address:<br>
+                                    80 Marine Parade Road<br>
+                                    #01-59/60/61/62/62A<br>
+                                    Singapore 449269 <br><br>
+                                    <i class="fas fa-phone-alt"></i> Telephone:<br>
+                                    <a href="#">+65 6793 3233</a>
+                                </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>    
+</div>   
+
 <!-- //contact -->
     <!-- =========  Contact Form ============ -->
     <section class="register-photo">
