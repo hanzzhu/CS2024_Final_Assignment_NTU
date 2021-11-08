@@ -368,6 +368,7 @@ button.owl-next {
     background-color: #ffffff;
     padding: 20px;
     color: #505e6c;
+    border-radius: 0 20px 20px 0;
   }
   
   @media (max-width:991px) {
