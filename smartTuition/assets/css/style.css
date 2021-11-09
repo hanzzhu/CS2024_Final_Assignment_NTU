@@ -55,6 +55,7 @@
 .w3l-bootstrap-header .dropdown-item:hover, .w3l-bootstrap-header .dropdown-item:focus {
   color: #ffffff !important;
   background-color: #79c9f4 !important;
+  border-radius: 0.25rem;
 }
 
 /* ============ scroll back to top button ============ */
