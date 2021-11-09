@@ -35,6 +35,29 @@
   color: #3a3a3c !important;
   }
 
+.w3l-bootstrap-header .navbar-light .navbar-nav .nav-link.show {
+    color: unset;
+ }
+
+ .w3l-bootstrap-header .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+  display: none !important;;
+}
+
+.w3l-bootstrap-header .navbar-expand-lg .navbar-nav .dropdown-menu {
+  transform: none !important;
+}
+.dropdown-menu {
+  padding: 0 !important;
+}  
+.dropdown-item {
+  padding: 0.5rem 1rem !important;
+}
+.w3l-bootstrap-header .dropdown-item:hover, .w3l-bootstrap-header .dropdown-item:focus {
+  color: #ffffff !important;
+  background-color: #79c9f4 !important;
+  border-radius: 0.25rem;
+}
+
 /* ============ scroll back to top button ============ */
 .w3l-footer-29-main #back-to-top {
   display: none;
