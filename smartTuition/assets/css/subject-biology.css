@@ -37,7 +37,7 @@
     color: var(--white-color);
 }
 .w3l-main-slider .banner-view {
-    background: url(../img/subject-science/chem_banner.jpg) no-repeat;
+    background: url(../img/subject-science/bio_banner.jpg) no-repeat;
     background-size: cover;
     min-height: 600px;
     position: relative;
@@ -45,12 +45,9 @@
     display: grid;
     align-items: center; }
 
-.w3l-main-slider .banner-top1 {
-    background: url(../img/subject-science/science_banner2.jpg) no-repeat;
-    background-size: cover; }
 .breadcrum-bg {
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(1, 30, 63, 0.62), rgba(3, 12, 93, 0.68)), url(../img/subject-science/chem_banner.jpg);
+    background-image: linear-gradient(to right, rgba(37, 54, 23, 0.63), rgba(26, 52, 18, 0.68)), url(../img/subject-science/bio_banner3.jpg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
     background-attachment: fixed; }
@@ -79,7 +76,6 @@
 @media (max-width: 600px) {
     .breadcrum-bg h2 {
         font-size: 35px; } }
-banner-view-chem
 /* ============ button ============ */
 .btn-secondary {
     color: #212529 !important;
