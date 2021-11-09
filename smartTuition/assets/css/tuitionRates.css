@@ -26,13 +26,6 @@
     background-size: cover; }
 
 
-/* ============ button ============ */
-.btn-secondary {
-    color: #212529 !important;
-    background-color: #fdc800 !important;
-    border-color: #fdc800!important;
-    }
-
 
 .heading {
     max-width: 750px; }
