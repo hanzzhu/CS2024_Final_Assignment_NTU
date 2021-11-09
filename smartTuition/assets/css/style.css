@@ -62,7 +62,7 @@
   width: auto;
   background: url(../../assets/img/happy-student-free-trial.jpg);
   background-size: cover;
-  border-radius: 20px 0 0 20px;
+  border-radius:20px 0 0 20px;
 }
 /* ============ scroll back to top button ============ */
 .w3l-footer-29-main #back-to-top {
