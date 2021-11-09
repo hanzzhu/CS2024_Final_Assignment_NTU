@@ -81,7 +81,7 @@
         }
         .login_popup .box .btn{
             width: 100%;
-            background-color: #e91e63;
+            background-color: #FAAD17;
             height: 45px;
             border-radius: 25px;
             font-size: 25px;
@@ -108,15 +108,15 @@
 <div id="overlay">
   <div id="text" class="login_popup">
     <div class="box">
-        <div class="form">
+        <form method="post" class="form">
             <div class="close" onclick="off()">&times;</div>
             <p><strong><i class="fa fa-newspaper-o" aria-hidden="true" style="font-size: 1em;"></i><br>Sign up for our newsletter and get the first month free!</strong></p>
             <div class="form_group">
-                <input type="text" placeholder="Enter your email" class="popup_input">
+                <input type="email" placeholder="Enter your email" name="email" class="popup_input" required="">
             </div>
             <p>Simply let our friendly staff know upon class registration!</p>
-            <button class="btn" onclick="off()">Sign Me Up!</button>
-        </div>
+            <div><button class="btn" type="submit">Sign Me Up!</button></div>
+        </form>
     </div>
   </div>
 </div>
