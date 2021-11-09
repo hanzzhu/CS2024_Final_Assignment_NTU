@@ -35,23 +35,29 @@
   color: #3a3a3c !important;
   }
 
-/*=== map ===*/
-.map-responsive{
-	overflow: hidden;
-	padding-bottom: 80%;
-	position: relative;
-	height: 0;
-}
-
-.map-responsive iframe {
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-
-}
-  
+/* ============ scroll back to top button ============ */
+.w3l-footer-29-main #movetop {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  cursor: pointer;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  outline: none;
+  background: var(--secondary-color);
+  padding: 0px;
+  border-radius: 4px;
+  transition: all 0.5s ease-out 0s; }
   
 
 .footer {
