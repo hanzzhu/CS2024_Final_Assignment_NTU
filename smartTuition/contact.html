@@ -47,10 +47,26 @@
         .mt-3 {
             margin-top: 3rem!important;
         }
-        .contact-title h2 {
+
+        .contact .col-lg-6.offset-lg-1 {
+            -webkit-box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
+            -moz-box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.68);
+            box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
+            border-radius: 20px;
+            padding: 50px;
+        }
+
+        .contact-form label:after {
+            content: " *";
+            color: red;
+        }
+
+
+        .contact-title h3 {
             font-weight: 600;
             color: var(--title-color);
         }
+        
         .contact-title h2:after {
             content: " ";
             border-bottom: 3px solid #FAAD17;
@@ -65,6 +81,19 @@
         section.pt-125.pb-125.send-message.bg_white {
             margin-top: 5rem;
             margin-bottom: 5rem;
+        }
+
+        
+        button.btn.btn-theme2 {
+            background-color: #FAAD17;
+            color: #ffffff;
+            border:none;
+        }
+        
+        button.btn.btn-theme2:hover {
+            background-color: #e91e63;
+            color: #ffffff;
+            border:none;
         }
 
         .map {
@@ -146,18 +175,7 @@
             margin-left: 15%;
             margin-right: 15%;
         }
-
-        button.btn.btn-theme2 {
-            background-color: #FAAD17;
-            color: #ffffff;
-            border:none;
-        }
         
-        button.btn.btn-theme2:hover {
-            background-color: #e91e63;
-            color: #ffffff;
-            border:none;
-        }
 
         textarea#w3lMessage {
             margin-top: 0;
@@ -168,19 +186,7 @@
             margin-bottom: 20px;
         }
                 
-        .contact .col-lg-6.offset-lg-1 {
-            -webkit-box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
-            -moz-box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.68);
-            box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
-            border-radius: 20px;
-            padding: 50px;
-        }
-
-        .contact-form label:after {
-            content: " *";
-            color: red;
-        }
-
+       
 
     </style>    
 
@@ -266,7 +272,7 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="contact-title">
-                        <h2>Send Us A Message</h2>
+                        <h3>Send Us A Message</h3>
                         <h4>We will get back to you within 24 hours.</h4>
                     </div>
                     <div class="row ">
