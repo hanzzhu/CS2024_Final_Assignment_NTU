@@ -35,9 +35,9 @@
   color: #3a3a3c !important;
   }
 
-  .w3l-bootstrap-header .navbar-light .navbar-nav .nav-link.show {
+.w3l-bootstrap-header .navbar-light .navbar-nav .nav-link.show {
     color: unset;
-}
+  }
 
 /* ============ scroll back to top button ============ */
 .w3l-footer-29-main #back-to-top {
