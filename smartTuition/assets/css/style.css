@@ -48,6 +48,10 @@
   color: #3a3a3c !important;
   }
 
+  .navbar-brand img {
+    height: 8vh !important;
+}
+
 .w3l-bootstrap-header .navbar-light .navbar-nav .nav-link.show {
     color: unset;
  }
