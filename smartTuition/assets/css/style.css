@@ -1,6 +1,5 @@
 :root  {
   --theme-color: #79c9f4 !important;
-  --secondary-color: #FAAD17 !important;
   --opposite-color: #fdc800;
   --text-color: rgb(100, 100, 100);
   --title-color: #1A1D2D;
@@ -107,7 +106,7 @@
   -o-border-image: initial;
   border-image: initial;
   outline: none;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   padding: 0px;
   border-radius: 4px;
   transition: all 0.5s ease-out 0s; }
@@ -131,14 +130,19 @@
 .footer {
   background: rgba(246, 249, 255, 0.08);
   padding: 0 0 30px 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 .footer .footer-top {
   background-size: contain;
-  border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
-  padding: 60px 0 30px 0;
+  padding: 10px 0 30px 0;
 }
+.footer .footer-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
 @media (max-width: 992px) {
   .footer .footer-top {
     background-position: center bottom;
@@ -152,8 +156,11 @@
   margin-bottom: 15px;
 }
 .footer .footer-top .footer-info .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  border: none !important;
+  width: auto !important;
+  height:auto;
+  max-width:100%;
+  cursor: pointer;
 }
 .footer .footer-top .footer-info .logo span {
   font-size: 30px;
@@ -189,6 +196,7 @@
   padding-bottom: 12px;
 }
 .footer .footer-top .footer-links {
+  margin-top: 20px;
   margin-bottom: 30px;
 }
 .footer .footer-top .footer-links ul {
