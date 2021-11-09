@@ -57,7 +57,13 @@
   background-color: #79c9f4 !important;
   border-radius: 0.25rem;
 }
-
+.register-photo .image-holder {
+  display: table-cell;
+  width: auto;
+  background: url(../../assets/img/happy-student-free-trial.jpg);
+  background-size: cover;
+  border-radius: 20px 0 0 20px;
+}
 /* ============ scroll back to top button ============ */
 .w3l-footer-29-main #back-to-top {
   display: none;
