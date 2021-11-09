@@ -39,6 +39,23 @@
     color: unset;
  }
 
+ .w3l-bootstrap-header .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: var(--white-color);
+  border: 1px #d5d5d5ee solid;
+  display: block;
+  border-right: none;
+  border-bottom: none;
+  transform: translateX(-50%) rotateZ(45deg);
+  position: absolute;
+  top: -6px;
+  left: 49%;
+  z-index: 1001;
+  display: none !important;;
+}
+
 /* ============ scroll back to top button ============ */
 .w3l-footer-29-main #back-to-top {
   display: none;
