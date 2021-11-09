@@ -25,10 +25,23 @@
 
 /* ============ button ============ */
 .btn-secondary {
-  color: #212529 !important;
-  background-color: #fdc800 !important;
-  border-color: #fdc800!important;
-  }
+  color: #ffffff !important;
+  background-color: #FAAD17 !important;
+  border-color: #FAAD17 !important; }
+  .btn-secondary:hover {
+    color: #ffffff;
+    background-color: #79c9f4 !important;
+    border-color: #79c9f4 !important; }
+  .btn-secondary:focus, .btn-secondary.focus {
+    color: #ffffff !important;
+    background-color: #79c9f4 !important;
+    border-color: #79c9f4 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 176, 6, 0.5); }
+  .btn-secondary.disabled, .btn-secondary:disabled {
+    color: #ffffff !important;
+    background-color: #FAAD17 !important;
+    border-color: #FAAD17 !important; }
+
 
 /* ============ top navigation ============ */
 .w3l-top-menu-1 .accounts li a {
