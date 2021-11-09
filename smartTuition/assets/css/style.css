@@ -56,6 +56,10 @@
   display: none !important;;
 }
 
+.w3l-bootstrap-header .navbar-expand-lg .navbar-nav .dropdown-menu {
+  transform: none;
+}
+
 /* ============ scroll back to top button ============ */
 .w3l-footer-29-main #back-to-top {
   display: none;
