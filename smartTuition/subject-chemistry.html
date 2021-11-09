@@ -252,7 +252,7 @@
         </div>
     </section>
     <!-- Start of Footer -->
-    <footer id="footer" class="footer w3l-footer-29-mai">
+    <footer id="footer" class="footer w3l-footer-29-main">
         <div class="footer-top">
             <div class="container">
                 <div class="row gy-4">
@@ -328,7 +328,7 @@
             </div>
         </div>
         <!-- move top -->
-        <button onclick="topFunction()" id="movetop" title="Go to top">
+        <button onclick="topFunction()" id="back-to-top" title="Go to top">
             <span class="fa fa-angle-up"></span>
         </button>
         <script>
@@ -339,9 +339,9 @@
 
             function scrollFunction() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("movetop").style.display = "block";
+                    document.getElementById("back-to-top").style.display = "block";
                 } else {
-                    document.getElementById("movetop").style.display = "none";
+                    document.getElementById("back-to-top").style.display = "none";
                 }
             }
 
