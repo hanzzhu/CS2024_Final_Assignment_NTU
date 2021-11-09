@@ -87,6 +87,10 @@
 .register-photo form {
   border-radius: 0 20px 20px 0 !important;
 }
+
+@media (max-width: 991px) {
+  .w3l-top-menu-1 li.top_bar {
+    display: inline; } }
 /* ============ scroll back to top button ============ */
 .w3l-footer-29-main #back-to-top {
   display: none;
@@ -138,8 +142,7 @@
 }
 .footer .footer-logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
