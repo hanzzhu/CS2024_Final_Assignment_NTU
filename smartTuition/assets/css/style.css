@@ -73,6 +73,14 @@
   background-color: #79c9f4 !important;
   border-radius: 0.25rem;
 }
+
+#navbar_top.fixed-top {
+  background-color: #ffffff;
+  -webkit-box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
+  -moz-box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.68);
+  box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
+}
+/* ============ register form ============ */
 .register-photo .image-holder {
   display: table-cell !important;
   width: auto !important;
