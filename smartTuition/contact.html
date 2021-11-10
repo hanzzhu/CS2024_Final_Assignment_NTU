@@ -37,14 +37,14 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
         
     <style>
-        .w3l-contact-breadcrum .breadcrum-bg {
+        .contact .w3l-contact-breadcrum .breadcrum-bg {
             background-size: cover;
             background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(121, 201, 244, 0.8)), url(assets/img/imageedit_1_4613483821.jpg);
             background-repeat: no-repeat, no-repeat, no-repeat;
             background-position: center;
             background-attachment: inherit;
         }
-        .mt-3 {
+        .contact .mt-3 {
             margin-top: 3rem!important;
         }
 
@@ -56,63 +56,57 @@
             padding: 50px;
         }
 
-        .contact-form label:after {
+        .contact .contact-form label:after {
             content: " *";
             color: red;
         }
 
 
-        .contact-title h3 {
+        .contact .contact-title h3 {
             font-size:36px;
             font-weight: 600;
             color: var(--title-color);
         }
         
-        .contact-title p {
+        .contact .contact-title p {
                 font-size: 18px;
             }
 
-        section.pt-125.pb-125.send-message.bg_white {
+        .contact section.pt-125.pb-125.send-message.bg_white {
             margin-top: 5rem;
             margin-bottom: 5rem;
         }
 
         
-        button.btn.btn-theme2 {
+        .contact button.btn.btn-theme2 {
             background-color: #FAAD17;
             color: #ffffff;
             border:none;
         }
         
-        button.btn.btn-theme2:hover {
-            background-color: #e91e63;
+        .contact button.btn.btn-theme2:hover {
+            background-color: #79c9f4;
             color: #ffffff;
             border:none;
         }
 
-        .map {
+        .contact .map {
             display: flex;
             justify-content: center;
         }
-
-        /*.section-title {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }*/
         
-        .section-title {
+        .contact .section-title {
             margin-top: 4rem;
         }
-        .region {
+        .contact .region {
             display: flex;
             justify-content: center;
             padding-top: 3rem;
         }
-        .region h2 {
+        .contact .region h2 {
             font-weight: 600;
         }
-        .region h2:after{
+        .contact .region h2:after{
                 content: " ";
                 border-bottom: 3px solid #FAAD17;
                 height: 3px;
@@ -122,7 +116,7 @@
                 width: 60px !important;
                 margin: auto;
         }
-        .locations h5 {
+        .contact .locations h5 {
             width: fit-content;
             padding: 10px;
             text-align: center;
@@ -132,40 +126,40 @@
             text-shadow: 1px 1px 3px #3a3b3c;
             border-radius: 10px;
         }
-        .locations {
+        .contact .locations {
             margin-left: 15%;
             margin-right: 15%;
         }
-        .locations .card{
+        .contact .locations .card{
             border: none;
         }
 
-        .locations h5{
+        .contact .locations h5{
             font-weight: 600;
             margin-left: 10%;
         }
 
        
-        .locations p.card-text {
+        .contact .locations p.card-text {
       
             margin-top:1rem;
             margin-left: 10%;
         }
 
-        .locations .fa, .locations .fas {
+        .contact .locations .fa, .contact .locations .fas {
             font-weight: 900;
             color: #FAAD17;
         }
 
-        .north-location, .east-location {
+        .contact .north-location, .contact .east-location {
             background-color: #79c9f4;
         }
 
-        .north-location .card.h-100, .east-location .card.h-100 {
+        .contact .north-location .card.h-100, .contact .east-location .card.h-100 {
             background-color: #79c9f4;
         }
 
-        .row.cont-main-top {
+        .contact .row.cont-main-top {
             margin-left: 15%;
             margin-right: 15%;
         }
@@ -298,7 +292,7 @@
             </div>
         </div>
     </section>
-    <div class="map">
+    <div class="map" id="#our-outlets">
     <iframe src="https://www.google.com/maps/d/embed?mid=1iDfsTaR55EClvervRmhZbNSOWBdnbQnR" width="88%" height="480"></iframe>
     </div>
 <div class="section-title">
