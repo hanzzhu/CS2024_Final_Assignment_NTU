@@ -95,7 +95,14 @@
 .register-photo form {
   border-radius: 0 20px 20px 0 !important;
 }
-
+@media (max-width: 480px) {
+  .register-photo .image-holder {
+    display:none;
+  }
+  .register-photo form {
+    border-radius: 20px!important;
+  }
+}
 @media (max-width: 991px) {
   .w3l-top-menu-1 li.top_bar {
     display: inline; } }
