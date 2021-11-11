@@ -70,3 +70,50 @@
 .events .card:hover .card-body .card-title a {
   color: #e91e63;
 }
+
+.services-12 .grid {
+  display: grid; }
+
+.services-12 .grid-column-2 {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  grid-column-gap: 30px; }
+
+.services-12 .tagline {
+  color: var(--title-color);
+  text-transform: capitalize;
+  line-height: 37px;
+  font-size: 30px;
+  font-weight: 600; }
+
+.services-12 li {
+  font-size: 16px;
+  line-height: 32px;
+  list-style-type: none;
+  color: var(--text-color); }
+
+.services-12 li span.fa {
+  color: var(--opposite-color); }
+
+.services-12 .column1 h4 {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 28px;
+  margin-top: 10px; }
+
+.services-12 .column1 p {
+  line-height: 24px;
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: normal;
+  font-style: normal; }
+
+@media (max-width: 736px) {
+  .services-12 .grid-column-2 {
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 414px) {
+  .services-12 .tagline {
+    line-height: 24px;
+    font-size: 18px; } }
