@@ -216,24 +216,24 @@
                         <form name="form" id="form" method="post" action="/action_page.php">
                             <div class="row">
                                 <div class="col-md-12 mt-20 mt-md-0">
-                                    <label for="name">Student Name</label>
+                                    <label for="name" class="required">Student Name</label>
                                     <input type="text" id="name" name="name" class="form-control" required>
                                 </div>
 
                                 <div class="col-md-12 mt-20 mt-md-0">
-                                    <label for="name">Parent/Guardian Name</label>
+                                    <label for="name" class="required">Parent/Guardian Name</label>
                                     <input type="text" id="name" name="name" class="form-control">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="number">Phone number</label>
+                                    <label for="number" class="required">Phone number</label>
                                     <input type="number" min="0.00" class="form-control" required />
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="email-address">Email</label>
+                                    <label for="email-address" class="required">Email</label>
                                     <input type="email" id='email-address' name="email" class="form-control" required>
                                 </div>
                                 <div class="col-md-12 mt-20 mt-md-0">
-                                    <label for="branch">Branch</label>
+                                    <label for="branch" class="required">Branch</label>
                                     <select type="branch" id="branch" class="form-select" required>
                                         <option disabled selected hidden>Select Branch</option>
                                         <option>Jurong Point</option>
@@ -253,14 +253,14 @@
                                 </div>
 
                                 <div class="col-md-12 mt-20 mt-md-0">
-                                    <label for="subject">Level</label>
+                                    <label for="subject" class="required">Level</label>
                                     <select name="level" id="level" class="form-select">
                                         <option value="" disabled selected hidden>Select level</option>
                                     </select>
                                     <br>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="subject">Subject</label>
+                                    <label for="subject" class="required">Subject</label>
                                     <select name="subject" id="subject" class="form-select">
                                         <option value="" disabled selected hidden>Please select level first</option>
                                     </select>
@@ -268,7 +268,7 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="subject">Schedule</label>
+                                    <label for="subject" class="required">Schedule</label>
                                     <select name="schedule" id="schedule" class="form-select">
                                         <option value="" disabled selected hidden>Please select subject first</option>
                                     </select>
