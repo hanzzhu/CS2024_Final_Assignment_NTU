@@ -55,7 +55,7 @@
     </section>
     <!-- Navigation Bar -->
     <section class="w3l-bootstrap-header">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2" id="navbar_top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/img/logo.png" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -78,6 +78,9 @@
                                 <a class="dropdown-item" href="subject-math.html">Math</a>
                                 <a class="dropdown-item" href="subject-science.html">Science</a>
                             </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Happenings</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="tuitionRates.html">Tuition Rates</a>
@@ -259,8 +262,8 @@
             </form>
         </div>
     </section>
-    <!-- Start of Footer -->
-    <footer id="footer" class="footer w3l-footer-29-main">
+       <!-- Start of Footer -->
+       <footer id="footer" class="footer w3l-footer-29-main">
         <div class="footer-top">
             <div class="container">
                 <div class="row align-center">
@@ -276,6 +279,7 @@
                         <ul style="align-items: center">
                             <h4>Useful Links</h4>
                             <li><i class="bi bi-chevron-right"></i> <a href="about.html">About</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="events.html">Happenings</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="tuitionRates.html">Tuition Rates</a>
                             </li>
                             <li><i class="bi bi-chevron-right"></i> <a href="testimonials.html">Testimonials</a>
@@ -338,6 +342,7 @@
         <button onclick="topFunction()" id="back-to-top" title="Go to top">
             <span class="fa fa-angle-up"></span>
         </button>
+
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function () {
@@ -378,64 +383,22 @@
     </script>
     <script src="assets/js/owl.carousel.js"></script>
     <!-- script for tesimonials carousel slider -->
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo1").owlCarousel({
-                loop: true,
-                margin: 20,
-                nav: false,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    768: {
-                        items: 2,
-                        nav: false
-                    },
-                    1000: {
-                        items: 3,
-                        nav: false,
-                        loop: false
+           <!-- script for sticky navbar -->
+           <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 50) {
+                        document.getElementById('navbar_top').classList.add('fixed-top');
+                        // add padding top to show content behind navbar
+                        navbar_height = document.querySelector('.navbar').offsetHeight;
+                        document.body.style.paddingTop = navbar_height + 'px';
+                    } else {
+                        document.getElementById('navbar_top').classList.remove('fixed-top');
+                        // remove padding top from body
+                        document.body.style.paddingTop = '0';
                     }
-                }
-            })
-        })
-    </script>
-    <!-- //script for tesimonials carousel slider -->
-    <script>
-        $(document).ready(function () {
-            $('.owl-one').owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: true,
-                responsiveClass: true,
-                autoplay: false,
-                autoplayTimeout: 5000,
-                autoplaySpeed: 1000,
-                autoplayHoverPause: false,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    480: {
-                        items: 1,
-                        nav: false
-                    },
-                    667: {
-                        items: 1,
-                        nav: true
-                    },
-                    1000: {
-                        items: 1,
-                        nav: true
-                    }
-                }
-            })
-        })
-    </script>
-    <!-- //script -->
+                });
+            });
+        </script>
 </body>
 </html>
