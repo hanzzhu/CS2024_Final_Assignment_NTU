@@ -6,7 +6,7 @@
     color: var(--white-color);
 }
 .w3l-main-slider .banner-view {
-    background: url(../img/tutor-lessons.png) no-repeat;
+    background: url(../img/tutor-lessons.webp) no-repeat;
     background-size: cover;
     min-height: 600px;
     position: relative;
@@ -15,7 +15,7 @@
     align-items: center; }
   
   .w3l-main-slider .banner-top1 {
-    background: url(../img/tutor-student.jpg) no-repeat;
+    background: url(../img/tutor-student.webp) no-repeat;
     background-size: cover; }
 
 
@@ -338,7 +338,7 @@ button.owl-next {
   .register-photo .image-holder {
     display: table-cell;
     width: auto;
-    background: url(../../assets/img/happy-student-free-trial.jpg);
+    background: url(../../assets/img/happy-student-free-trial.webp);
     background-size: cover;
     border-radius: 20px 0 0 20px;
   }
