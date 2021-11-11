@@ -188,7 +188,7 @@
   border: none;
   border-radius: 50px;
   font-weight: 600;
-  background-color: #0e1b4d;
+  background-color: #79c9f4;
   color: #fff;
   padding: 10px 100px;
 }
@@ -208,7 +208,7 @@
   }
 }
 #schedule .nav-tabs a.active {
-  background-color: #f82249;
+  background-color: #0e1b4d;
   color: #fff;
 }
 
