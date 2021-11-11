@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <!-- requires this line viewport bootstrap indicates responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>FAQ - Smart Tuition - Best Tuition Agency in Singapore</title>
-    <meta name="description" content="Have questions about the unique tuition experience that we have to offer? Come visit our Frequently-Asked Questions page where we address some of your burning questions.">
+    <meta name="description"
+        content="Have questions about the unique tuition experience that we have to offer? Come visit our Frequently-Asked Questions page where we address some of your burning questions.">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-G1KWYRHNXT"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-G1KWYRHNXT');
-    </script>    
+        gtag('config', 'G-G1KWYRHNXT');
+    </script>
 
     <!-- Convert .jpg/.png into .ico (ie. favicon.ico) for  site identity icon from https://favicon.io/favicon-converter/ save images folder -->
     <link href="assets/img/logo(small).png" rel="shortcut icon" type="image/x-icon">
@@ -48,42 +50,44 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-        
-        <style>
-            .faq .w3l-contact-breadcrum .breadcrum-bg {
-                background-size: cover;
-                background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(121, 201, 244, 0.8)), url(assets/img/contact-banner.jpg);
-                background-repeat: no-repeat, no-repeat, no-repeat;
-                background-position: center;
-                background-attachment: inherit;
-            }
-    
-            .faq .faq-title {
-                margin-top: 4rem;
-                text-align: center;
-            }
-    
-            .faq .faq-title h2 {
-                font-size: 36px;
-                font-weight: 600;
-                color: var(--title-color);
-            }
-    
-            .faq .faq-title p {
-                font-size: 18px;
-            }
 
-            .faq .faq-accordion {
-                margin-left: 18%;
-                margin-right: 18%;
-                padding-top:3rem;
-                padding-bottom:4rem;
-            }
-            .faq .faq-accordion button.accordion {
-                font-size: 18px;
-                font-weight: 600;
-            }
-            .faq .faq-accordion .accordion {
+    <style>
+        .faq .w3l-contact-breadcrum .breadcrum-bg {
+            background-size: cover;
+            background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(121, 201, 244, 0.8)), url(assets/img/contact-banner.jpg);
+            background-repeat: no-repeat, no-repeat, no-repeat;
+            background-position: center;
+            background-attachment: inherit;
+        }
+
+        .faq .faq-title {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .faq .faq-title h2 {
+            font-size: 36px;
+            font-weight: 600;
+            color: var(--title-color);
+        }
+
+        .faq .faq-title p {
+            font-size: 18px;
+        }
+
+        .faq .faq-accordion {
+            margin-left: 18%;
+            margin-right: 18%;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+        }
+
+        .faq .faq-accordion button.accordion {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .faq .faq-accordion .accordion {
             background-color: #F0F6FE;
             color: #444;
             cursor: pointer;
@@ -94,345 +98,399 @@
             outline: none;
             font-size: 15px;
             transition: 0.4s;
-            }
-    
-            .faq .faq-accordion .active, .faq-accordion .accordion:hover {
+        }
+
+        .faq .faq-accordion .active,
+        .faq-accordion .accordion:hover {
             background-color: #ccc;
-            }
-            .faq .faq-accordion .accordion:hover, .faq-accordion .accordion:active {
-                color: #fff;
-                background-color: #79c9f4;
-            }
-    
-            .faq .faq-accordion .accordion:hover:after {
-                color: #fff;
-            }    
-            .faq .faq-accordion .accordion:after {
+        }
+
+        .faq .faq-accordion .accordion:hover,
+        .faq-accordion .accordion:active {
+            color: #fff;
+            background-color: #79c9f4;
+        }
+
+        .faq .faq-accordion .accordion:hover:after {
+            color: #fff;
+        }
+
+        .faq .faq-accordion .accordion:after {
             content: '\002B';
             color: #777;
             font-weight: bold;
             float: right;
             margin-left: 5px;
-            }
-    
-            .faq .faq-accordion .active:after {
+        }
+
+        .faq .faq-accordion .active:after {
             content: "\2212";
-            }
-    
-            .faq .faq-accordion button.accordion.active {
-                border-bottom: 3px solid #79c9f4;
-            }
-    
-            .faq .faq-accordion .active {
-                background-color: #F0F6FE;
-                border-bottom: 3px solid #79c9f4;
-            }
-    
-            .faq .faq-accordion .panel {
+        }
+
+        .faq .faq-accordion button.accordion.active {
+            border-bottom: 3px solid #79c9f4;
+        }
+
+        .faq .faq-accordion .active {
+            background-color: #F0F6FE;
+            border-bottom: 3px solid #79c9f4;
+        }
+
+        .faq .faq-accordion .panel {
             padding: 0 18px;
             background-color: white;
             display: none;
             overflow: hidden;
-            }
-    
-            
-            .faq .faq-accordion p {
-                margin-top: 1rem;
-                margin-bottom: 1rem;
-            }
-    
-            .faq .faq-accordion a, .faq-title a {
-                color: #FAAD17;
-                text-decoration: none;
-            }
-            .faq .faq-accordion a:hover,.faq-title a:hover {
-                text-decoration: underline;
-            }
-    
-          
-    
-        </style>    
-    </head>
-    <body class="faq">
-        <!-- Top Menu -->
-        <section class="w3l-top-menu-1">
-            <div class="top-hd">
-                <div class="container">
-                    <header class="row top-menu-top">
-                        <div class="accounts col-md-6 col-6">
-                            <li class="top_li"><span class="fa fa-phone"></span><a href="tel:+65 9123 4567">+65 9123
-                                    4567</a> </li>
-                            <li class="top_li1"><span class="fa fa-envelope"></span> <a href="mailto:info@smarttuition.com"
-                                    class="mail"> info@smarttuition.com</a> </li>
-                        </div>
-                    </header>
+        }
+
+
+        .faq .faq-accordion p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq .faq-accordion a,
+        .faq-title a {
+            color: #FAAD17;
+            text-decoration: none;
+        }
+
+        .faq .faq-accordion a:hover,
+        .faq-title a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="faq">
+    <!-- Top Menu -->
+    <section class="w3l-top-menu-1">
+        <div class="top-hd">
+            <div class="container">
+                <header class="row top-menu-top">
+                    <div class="accounts col-md-6 col-6">
+                        <li class="top_li"><span class="fa fa-phone"></span><a href="tel:+65 9123 4567">+65 9123
+                                4567</a> </li>
+                        <li class="top_li1"><span class="fa fa-envelope"></span> <a href="mailto:info@smarttuition.com"
+                                class="mail"> info@smarttuition.com</a> </li>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </section>
+    <!-- Navigation Bar -->
+    <section class="w3l-bootstrap-header">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2" id="navbar_top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo.png" alt="Smart Tuition Singapore" title="Smart Tuition Singapore">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"
+                                href="#">Subjects&nbsp;</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="subject-english.html">English</a>
+                                <a class="dropdown-item" href="subject-math.html">Math</a>
+                                <a class="dropdown-item" href="subject-science.html">Science</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Happenings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tuitionRates.html">Tuition Rates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testimonials.html">Testimonials</a>
+                        </li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
+                                data-bs-toggle="dropdown" href="#">Contact&nbsp;</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="contact.html">Contact Us</a><a
+                                    class="dropdown-item" href="faq.html">FAQ</a></div>
+                        </li>
+                    </ul>
+                    <span class="social-top col-md-3 col-6">
+                        <a href="apply-now.html" class="btn btn-secondary btn-theme4">Apply Now</a>
+                    </span>
                 </div>
             </div>
-        </section>
-        <!-- Navigation Bar -->
-        <section class="w3l-bootstrap-header">
-            <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2" id="navbar_top">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo.png" alt="Your logo" title="Your logo" style="height:35px;" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown"
-                                    href="#">Subjects&nbsp;</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="subject-english.html">English</a>
-                                    <a class="dropdown-item" href="subject-math.html">Math</a>
-                                    <a class="dropdown-item" href="subject-science.html">Science</a>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="events.html">Happenings</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="tuitionRates.html">Tuition Rates</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="testimonials.html">Testimonials</a>
-                            </li>
-                            <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
-                                    data-bs-toggle="dropdown" href="#">Contact&nbsp;</a>
-                                <div class="dropdown-menu"><a class="dropdown-item" href="contact.html">Contact Us</a><a
-                                        class="dropdown-item" href="faq.html">FAQ</a></div>
-                            </li>
-                        </ul>
-                        <span class="social-top col-md-3 col-6">
-                            <a href="apply-now.html" class="btn btn-secondary btn-theme4">Apply Now</a>
-                        </span>
-                    </div>
-                </div>
-            </nav>
-        </section>
+        </nav>
+    </section>
     <section class="w3l-contact-breadcrum">
-            <div class="breadcrum-bg py-sm-5 py-4">
-                <div class="container py-lg-3">
+        <div class="breadcrum-bg py-sm-5 py-4">
+            <div class="container py-lg-3">
                 <h2>FAQ</h2>
                 <p><a href="index.html">Home</a> &nbsp; / &nbsp; FAQ</p>
-                </div>
             </div>
-            </section>
-    
-            <div class="faq-title">
-                <h2>Frequently Asked Questions (FAQ)</h2>
-                <p>Got a question? We're here to answer! <br>If you don't see your question here, drop us a line on our <a href="contact.html">Contact Us</a> page.</p>
-            </div>
-    
-            <div class="faq-accordion ">
-                
-                <button class="accordion">What kind of training do the tutors at Smart tuition have?</button>
-                <div class="panel">
-                <p>At Smart Tuition, we screen our tutors and ensure they have professional teaching qualifications and experience to be able to understand the different learning styles of students and customise methods of delivery according to their needs.
-                Our team of expert tutors are NIE-trained and keep close contact with the various schools they have come from previously to ensure that they are up-to-date with any changes in the syllabus. <br>Furthermore, you can be assured that Smart Tuition tutors are not only well-versed in their knowledge of the subjects, but they also have a passion for teaching that has been recognised with numerous MOE Teaching Excellence awards.
-                    </p>
-                </div>
-    
-                <button class="accordion">What programs and levels do you offer?</button>
-                <div class="panel">
-                <p>We offer quality tuition classes for <a href="subject-english.html">English</a>, <a href="subject-math.html">Mathematics</a>, <a href="subject-science.html">Sciences</a> across all Secondary levels. <br>All our classes come with a choice of either online classes or physical classes at any one of <a href="contact.html#our-outlets">our outlets</a>.</p>
-                </div>
-    
-                <button class="accordion">Why would students enjoy learning more at Smart Tuition?</button>
-                <div class="panel">
-                <p> Beyond the conventional structured classroom lessons, we provide a conducive and comfortable environment of a learning café at a range of locations with broad tables and private rooms to give students and tutors the flexibility to study individually or in a group.
-                In this café space outside our classrooms, students are able to have tutors answer any of their queries on the fly as they are study, and are able to hang out with like-minded individuals to foster a collaborative learning culture.    
-                </p>
-                </div> 
-    
-                <button class="accordion">Do you help students with their science practical papers?</button>
-                <div class="panel">
-                <p>Yes, experiment-based lessons will be strategically taught when nearing national science practical examination. It is worth noting that very little marks in practical exams are attributed to experimental accuracy. (Accuracy score contributes only 1% of the overall O' Level score). Thus, to prepare our students to score well for practical papers, our tutors would conduct experiments alongside the students and impart to them critical theoretical knowledge about the nature of the experiments, data processing, planning, time management and graphical presentation.</p>
-                </div>
-    
-                <button class="accordion">Does Smart Tuition offer online tuition?</button>
-                <div class="panel">
-                <p> Yes! Smart Tuition offers the same programs online that you would find in a physical centre. <br>
-                    As our online tutoring lessons are conducted live, students will also be able to ask questions just like regular classes at our centre.</p>
-                </div>
-    
-                <button class="accordion">Are students allowed to make-up for missed classes?</button>
-                <div class="panel">
-                <p>Yes! We offer multiple time slots for the same level within the same week, you can view our class schedules <a href="tuitionRates.html">here</a>. No stress when you cannot make it for your usual slot, there is always a make-up class available for you. Video-recorded lessons are also available for viewing for students who miss the entire week of lessons.</p>
-                </div>
-    
-                <button class="accordion">Does Smart Tuition offer trial classes?</button>
-                <div class="panel">
-                <p>Yes, you can register for a free trial lesson <a href="#free-trial-form">here</a>. <br>New students who are referred by current students or alumni would also be able extend their free trial to 2 lessons. </p>
-                </div>
-    
-                <button class="accordion">Can I request for a specific tutor?</button>
-                <div class="panel">
-                    <p>Sure, you may view some of our available tutors under each subject page, feel free to give us a call at <a href="#">+65 9123 4867</a> and let us know of the specific tutor you are looking for. However, do note that the availability of the tutor may not be guaranteed. Our Coordinators will be swift to advise you on the availabilities of the requested tutor and recommend any similar tutors that may be available if needed.</p>
-                </div>    
-    
-                <button class="accordion">Do you follow a topic sequence according to any particular school?</button>
-                <div class="panel">
-                <p>Generally speaking, we will follow the scheme of work by the majority of schools. In the secondary level, we offer different tracks for various schools (e.g. RGS, HCI, NYGH, RI track). Should a student’s sequence of topics or learning progress be different, we can arrange for extra consultation sessions with the tutors for students to cater to his/her individual needs.</p>
-                </div>
-    
-                <button class="accordion">What is the usual class size?</button>
-                <div class="panel">
-                <p>We expect weekday classes to be smaller than weekend classes. There is no need to be concerned about the class being too big and students getting distracted, as our lessons have been primed to be captivating even to larger groups. Even in a larger class setting, our tutors will constantly walk around the class, inspect students’ workings, and have check-ins with them to check their progress.</p>
-                </div>
-                
-                </div>
-            </div>
+        </div>
+    </section>
 
-<!-- //contact -->
+    <div class="faq-title">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <p>Got a question? We're here to answer! <br>If you don't see your question here, drop us a line on our <a
+                href="contact.html">Contact Us</a> page.</p>
+    </div>
+
+    <div class="faq-accordion ">
+
+        <button class="accordion">What kind of training do the tutors at Smart tuition have?</button>
+        <div class="panel">
+            <p>At Smart Tuition, we screen our tutors and ensure they have professional teaching qualifications and
+                experience to be able to understand the different learning styles of students and customise methods of
+                delivery according to their needs.
+                Our team of expert tutors are NIE-trained and keep close contact with the various schools they have come
+                from previously to ensure that they are up-to-date with any changes in the syllabus. <br>Furthermore,
+                you can be assured that Smart Tuition tutors are not only well-versed in their knowledge of the
+                subjects, but they also have a passion for teaching that has been recognised with numerous MOE Teaching
+                Excellence awards.
+            </p>
+        </div>
+
+        <button class="accordion">What programs and levels do you offer?</button>
+        <div class="panel">
+            <p>We offer quality tuition classes for <a href="subject-english.html">English</a>, <a
+                    href="subject-math.html">Mathematics</a>, <a href="subject-science.html">Sciences</a> across all
+                Secondary levels. <br>All our classes come with a choice of either online classes or physical classes at
+                any one of <a href="contact.html#our-outlets">our outlets</a>.</p>
+        </div>
+
+        <button class="accordion">Why would students enjoy learning more at Smart Tuition?</button>
+        <div class="panel">
+            <p> Beyond the conventional structured classroom lessons, we provide a conducive and comfortable environment
+                of a learning café at a range of locations with broad tables and private rooms to give students and
+                tutors the flexibility to study individually or in a group.
+                In this café space outside our classrooms, students are able to have tutors answer any of their queries
+                on the fly as they are study, and are able to hang out with like-minded individuals to foster a
+                collaborative learning culture.
+            </p>
+        </div>
+
+        <button class="accordion">Do you help students with their science practical papers?</button>
+        <div class="panel">
+            <p>Yes, experiment-based lessons will be strategically taught when nearing national science practical
+                examination. It is worth noting that very little marks in practical exams are attributed to experimental
+                accuracy. (Accuracy score contributes only 1% of the overall O' Level score). Thus, to prepare our
+                students to score well for practical papers, our tutors would conduct experiments alongside the students
+                and impart to them critical theoretical knowledge about the nature of the experiments, data processing,
+                planning, time management and graphical presentation.</p>
+        </div>
+
+        <button class="accordion">Does Smart Tuition offer online tuition?</button>
+        <div class="panel">
+            <p> Yes! Smart Tuition offers the same programs online that you would find in a physical centre. <br>
+                As our online tutoring lessons are conducted live, students will also be able to ask questions just like
+                regular classes at our centre.</p>
+        </div>
+
+        <button class="accordion">Are students allowed to make-up for missed classes?</button>
+        <div class="panel">
+            <p>Yes! We offer multiple time slots for the same level within the same week, you can view our class
+                schedules <a href="tuitionRates.html">here</a>. No stress when you cannot make it for your usual slot,
+                there is always a make-up class available for you. Video-recorded lessons are also available for viewing
+                for students who miss the entire week of lessons.</p>
+        </div>
+
+        <button class="accordion">Does Smart Tuition offer trial classes?</button>
+        <div class="panel">
+            <p>Yes, you can register for a free trial lesson <a href="#free-trial-form">here</a>. <br>New students who
+                are referred by current students or alumni would also be able extend their free trial to 2 lessons. </p>
+        </div>
+
+        <button class="accordion">Can I request for a specific tutor?</button>
+        <div class="panel">
+            <p>Sure, you may view some of our available tutors under each subject page, feel free to give us a call at
+                <a href="#">+65 9123 4867</a> and let us know of the specific tutor you are looking for. However, do
+                note that the availability of the tutor may not be guaranteed. Our Coordinators will be swift to advise
+                you on the availabilities of the requested tutor and recommend any similar tutors that may be available
+                if needed.
+            </p>
+        </div>
+
+        <button class="accordion">Do you follow a topic sequence according to any particular school?</button>
+        <div class="panel">
+            <p>Generally speaking, we will follow the scheme of work by the majority of schools. In the secondary level,
+                we offer different tracks for various schools (e.g. RGS, HCI, NYGH, RI track). Should a student’s
+                sequence of topics or learning progress be different, we can arrange for extra consultation sessions
+                with the tutors for students to cater to his/her individual needs.</p>
+        </div>
+
+        <button class="accordion">What is the usual class size?</button>
+        <div class="panel">
+            <p>We expect weekday classes to be smaller than weekend classes. There is no need to be concerned about the
+                class being too big and students getting distracted, as our lessons have been primed to be captivating
+                even to larger groups. Even in a larger class setting, our tutors will constantly walk around the class,
+                inspect students’ workings, and have check-ins with them to check their progress.</p>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- //contact -->
     <!-- =========  Contact Form ============ -->
     <section class="register-photo" id="free-trial-form">
-      <div class="form-container">
-          <div class="image-holder"></div>
-          <form method="post">
-              <h2 class="text-center"><strong>Register</strong> for a free trial!</h2>
-              <div class="mb-3"><input class="form-control" type="name" name="Name" placeholder="Name" required="">
-              </div>
-              <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" required="">
-              </div>
-              <div class="mb-3"><input class="form-control" type="tel" name="phone" placeholder="Phone Number"
-                      required=""></div>
-              <div class="mb-3"></div>
-              <div class="mb-3">
-                  <div class="form-check"><label class="form-check-label"><input class="form-check-input"
-                                type="checkbox">I acknowledge that I have read and understood the <a href="privacyPolicy.html">Privacy Policy</a>, and I consent and agree to the collection, use, and disclosure of my personal data for the purpose of this enquiry and for follow up, in accordance with the <a href="privacyPolicy.html">Privacy Policy</a> and Terms of Use of Smart Tuition Pte Ltd.<br><br>In accordance with the Singapore Personal Data Protection Act 2012 (PDPA), you may exercise your right to access, modify, and/or delete your registered records. For more information on our Privacy Policy, please visit our <a href="privacyPolicy.html">Privacy Policy</a>. For inquiries, please email the Data Protection Officer at dpo@smarttuition.com.</label>
-                  </div>
-              </div>
-              <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Register</button></div>
-          </form>
-      </div>
-  </section>
-<!-- Start of Footer -->
-<footer id="footer" class="footer w3l-footer-29-main">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row align-center">
-                
-                <div class="footer-logo">
-                    <a href="index.html" ><img src="assets/img/logo.png" alt="" width="335">
-                    </a>
+        <div class="form-container">
+            <div class="image-holder"></div>
+            <form method="post">
+                <h2 class="text-center"><strong>Register</strong> for a free trial!</h2>
+                <div class="mb-3"><input class="form-control" type="name" name="Name" placeholder="Name" required="">
                 </div>
-                <hr />
-            </div>
-            <div class="row gy-2 align-center">
-                <div class="col-lg-4 footer-links d-flex justify-content-center" style="text-align: center">
-                    <ul style="align-items: center">
-                        <h4>Useful Links</h4>
-                        <li><i class="bi bi-chevron-right"></i> <a href="about.html">About</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="events.html">Happenings</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="tuitionRates.html">Tuition Rates</a>
-                        </li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="testimonials.html">Testimonials</a>
-                        </li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="faq.html">FAQ</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="privacyPolicy.html">Privacy Policy</a>
-                        </li>
-                    </ul>
+                <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" required="">
                 </div>
-                <div class="col-lg-4 footer-links d-flex justify-content-center" style="text-align: center">
-                    <ul style="align-items: center">
-                        <h4>Subjects</h4>
-                        <li><i class="bi bi-chevron-right"></i> <a href="subject-english.html">English</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="subject-math.html">Math</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="subject-science.html">Science</a></li>
-                        <li>&nbsp&nbsp&nbsp&nbsp<i class="bi bi-chevron-right"></i> <a
-                                href="subject-biology.html">Biology</a></li>
-                        <li>&nbsp&nbsp&nbsp&nbsp<i class="bi bi-chevron-right"></i> <a
-                                href="subject-chemistry.html">Chemistry</a></li>
-                        <li>&nbsp&nbsp&nbsp&nbsp<i class="bi bi-chevron-right"></i> <a
-                                href="subject-physics.html">Physics</a></li>
-                    </ul>
-              
+                <div class="mb-3"><input class="form-control" type="tel" name="phone" placeholder="Phone Number"
+                        required=""></div>
+                <div class="mb-3"></div>
+                <div class="mb-3">
+                    <div class="form-check"><label class="form-check-label"><input class="form-check-input"
+                                type="checkbox">I acknowledge that I have read and understood the <a
+                                href="privacyPolicy.html">Privacy Policy</a>, and I consent and agree to the collection,
+                            use, and disclosure of my personal data for the purpose of this enquiry and for follow up,
+                            in accordance with the <a href="privacyPolicy.html">Privacy Policy</a> and Terms of Use of
+                            Smart Tuition Pte Ltd.<br><br>In accordance with the Singapore Personal Data Protection Act
+                            2012 (PDPA), you may exercise your right to access, modify, and/or delete your registered
+                            records. For more information on our Privacy Policy, please visit our <a
+                                href="privacyPolicy.html">Privacy Policy</a>. For inquiries, please email the Data
+                            Protection Officer at dpo@smarttuition.com.</label>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="footer-links d-flex justify-content-center">
+                <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Register</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- Start of Footer -->
+    <footer id="footer" class="footer w3l-footer-29-main">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row align-center">
+
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="assets/img/logo.png" alt="Smart Tuition Singapore"
+                                title="Smart Tuition Singapore">
+                        </a>
+                    </div>
+                    <hr />
+                </div>
+                <div class="row gy-2 align-center">
+                    <div class="col-lg-4 footer-links d-flex justify-content-center" style="text-align: center">
                         <ul style="align-items: center">
-                            <h4>Contact Us</h4>
-                            <li><a href="tel:+6591234567"><span class="fa fa-phone"></span> +65 9123 4567</a></li>
-                            <li><a href="mailto:info@smarttuition.com" class="mail"><span class="fa fa-envelope"></span> info@smarttuition.com</a></li>
-                            <li><a href="contact.html" class="mail"><span class="fa fa-map-marker"></span> Multiple Branches</a></li>
+                            <h4>Useful Links</h4>
+                            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="events.html">Happenings</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="tuitionRates.html">Tuition Rates</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="testimonials.html">Testimonials</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="faq.html">FAQ</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="privacyPolicy.html">Privacy Policy</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="map-container" style="height: 250px">
-                        <iframe
-                            src="https://www.google.com/maps/d/embed?mid=1iDfsTaR55EClvervRmhZbNSOWBdnbQnR"
-                            frameborder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="row gy-1 align-center">
-                <div class="col-lg-12 footer-info d-flex justify-content-center" style="text-align: center">
-                    <div class="col-6 social-links mt-3">
-                        <a href="https://www.facebook.com/smarttuition" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/smarttuition" target="_blank" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
-                        <a href="https://www.youtube.com/smarttuition" target="_blank" class="youtube"><i class="bi bi-youtube bx bxl-youtube"></i></a>
-                        <a href="https://sg.linkedin.com/smarttuition" target="_blank" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a><br /><br />
+                    <div class="col-lg-4 footer-links d-flex justify-content-center" style="text-align: center">
+                        <ul style="align-items: center">
+                            <h4>Subjects</h4>
+                            <li><i class="bi bi-chevron-right"></i> <a href="subject-english.html">English</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="subject-math.html">Math</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="subject-science.html">Science</a></li>
+                            <li>&nbsp&nbsp&nbsp&nbsp<i class="bi bi-chevron-right"></i> <a
+                                    href="subject-biology.html">Biology</a></li>
+                            <li>&nbsp&nbsp&nbsp&nbsp<i class="bi bi-chevron-right"></i> <a
+                                    href="subject-chemistry.html">Chemistry</a></li>
+                            <li>&nbsp&nbsp&nbsp&nbsp<i class="bi bi-chevron-right"></i> <a
+                                    href="subject-physics.html">Physics</a></li>
+                        </ul>
 
-                        <p> &copy; 2021 <span>Smart Tuition Pte Ltd. All Rights Reserved</span> </p>
                     </div>
-                </div>
-                <hr />
-            </div>
+                    <div class="col-lg-4">
+                        <div class="footer-links d-flex justify-content-center">
+                            <ul style="align-items: center">
+                                <h4>Contact Us</h4>
+                                <li><a href="tel:+6591234567"><span class="fa fa-phone"></span> +65 9123 4567</a></li>
+                                <li><a href="mailto:info@smarttuition.com" class="mail"><span
+                                            class="fa fa-envelope"></span> info@smarttuition.com</a></li>
+                                <li><a href="contact.html" class="mail"><span class="fa fa-map-marker"></span> Multiple
+                                        Branches</a></li>
+                            </ul>
+                        </div>
+                        <div class="map-container" style="height: 250px">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1iDfsTaR55EClvervRmhZbNSOWBdnbQnR"
+                                frameborder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
 
+                </div>
+                <div class="row gy-1 align-center">
+                    <div class="col-lg-12 footer-info d-flex justify-content-center" style="text-align: center">
+                        <div class="col-6 social-links mt-3">
+                            <a href="https://www.facebook.com/smarttuition" target="_blank" class="facebook"><i
+                                    class="bi bi-facebook"></i></a>
+                            <a href="https://www.instagram.com/smarttuition" target="_blank" class="instagram"><i
+                                    class="bi bi-instagram bx bxl-instagram"></i></a>
+                            <a href="https://www.youtube.com/smarttuition" target="_blank" class="youtube"><i
+                                    class="bi bi-youtube bx bxl-youtube"></i></a>
+                            <a href="https://sg.linkedin.com/smarttuition" target="_blank" class="linkedin"><i
+                                    class="bi bi-linkedin bx bxl-linkedin"></i></a><br /><br />
+
+                            <p> &copy; 2021 <span>Smart Tuition Pte Ltd. All Rights Reserved</span> </p>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+
+            </div>
         </div>
-    </div>
-    <!-- move top -->
-    <button onclick="topFunction()" id="back-to-top" title="Go to top">
-        <span class="fa fa-angle-up"></span>
-    </button>
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
+        <!-- move top -->
+        <button onclick="topFunction()" id="back-to-top" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("back-to-top").style.display = "block";
-            } else {
-                document.getElementById("back-to-top").style.display = "none";
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("back-to-top").style.display = "block";
+                } else {
+                    document.getElementById("back-to-top").style.display = "none";
+                }
             }
-        }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
 
-    <!-- /move top -->
-</footer>
-<!-- End of Footer -->
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-  </script>
-  <script src="assets/js/owl.carousel.js"></script>
+        <!-- /move top -->
+    </footer>
+    <!-- End of Footer -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/owl.carousel.js"></script>
     <!-- script for sticky navbar -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -450,26 +508,27 @@
             });
         });
     </script>
-      <!-- //script for accordion -->
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+    <!-- //script for accordion -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-    for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-        panel.style.display = "none";
-        } else {
-        panel.style.display = "block";
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
         }
-    });
-    }
-</script>   
+    </script>
 </body>
+
 </html>
