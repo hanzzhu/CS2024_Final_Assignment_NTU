@@ -52,7 +52,7 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <style>
-        .w3l-contact-breadcrum .breadcrum-bg {
+        .apply-now .w3l-contact-breadcrum .breadcrum-bg {
             background-size: cover;
             background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(121, 201, 244, 0.8)), url(assets/img/registration-banner.jpg);
             background-repeat: no-repeat, no-repeat, no-repeat;
@@ -61,68 +61,68 @@
         }
 
 
-        .apply-title {
+        .apply-now .apply-title {
             margin-top: 4rem;
             text-align: center;
         }
 
-        .apply-title h2 {
+        .apply-now .apply-title h2 {
             font-weight: 600;
             color: var(--title-color);
         }
 
-        .col-apply {
+        .apply-now .col-apply {
             padding-left: 5%;
             padding-right: 5%;
             padding-top: 3rem;
             padding-bottom: 4rem;
         }
 
-        .apply-form {
+        .apply-now .apply-form {
             padding: 5%;
             -webkit-box-shadow: 0px 0px 20px 5px #79c9f4;
             box-shadow: 0px 0px 50px 5px #79c9f4;
             border-radius: 20px;
         }
 
-        .apply-img {
+        .apply-now .apply-img {
             padding-left: 5%;
             padding-right: 5%;
             margin-bottom: 3rem;
         }
 
-        .apply-img img,
+        .apply-now .apply-img img,
         svg {
             width: 100%;
             border-radius: 20px;
         }
 
 
-        .apply-form label.required:after {
+        .apply-now .apply-form label.required:after {
             content: " *";
             color: red;
         }
 
 
-        button.btn.btn-theme2 {
+        .apply-now button.btn.btn-theme2 {
             background-color: #FAAD17;
             color: #ffffff;
             border: none;
         }
 
-        button.btn.btn-theme2:hover {
+        .apply-now button.btn.btn-theme2:hover {
             background-color: #79c9f4;
             color: #ffffff;
             border: none;
         }
 
-        .form-check {
+        .apply-now .form-check {
             margin-left: 10px;
         }
     </style>
 </head>
 
-<body class="contact">
+<body class="apply-now">
     <!-- Top Menu -->
     <section class="w3l-top-menu-1">
         <div class="top-hd">
@@ -140,7 +140,7 @@
     </section>
     <!-- Navigation Bar -->
     <section class="w3l-bootstrap-header">
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2">
+        <nav class="navbar navbar-expand-lg navbar-light py-lg-2 py-2" id="navbar_top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="assets/img/logo.png" alt="Your logo" title="Your logo" style="height:35px;" />
@@ -483,88 +483,23 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
         </script>
     <script src="assets/js/owl.carousel.js"></script>
-    <!-- script for tesimonials carousel slider -->
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo1").owlCarousel({
-                loop: true,
-                margin: 20,
-                nav: false,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    768: {
-                        items: 2,
-                        nav: false
-                    },
-                    1000: {
-                        items: 3,
-                        nav: false,
-                        loop: false
-                    }
-                }
-            })
-        })
-    </script>
-    <!-- //script for tesimonials carousel slider -->
-    <script>
-        $(document).ready(function () {
-            $('.owl-one').owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: true,
-                responsiveClass: true,
-                autoplay: false,
-                autoplayTimeout: 5000,
-                autoplaySpeed: 1000,
-                autoplayHoverPause: false,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    480: {
-                        items: 1,
-                        nav: false
-                    },
-                    667: {
-                        items: 1,
-                        nav: true
-                    },
-                    1000: {
-                        items: 1,
-                        nav: true
-                    }
-                }
-            })
-        })
-    </script>
-    <!-- //script -->
-    <!-- //script for accordion -->
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function () {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
-
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
-    <!-- //script -->
+   <!-- script for sticky navbar -->
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar_top').classList.add('fixed-top');
+                // add padding top to show content behind navbar
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('navbar_top').classList.remove('fixed-top');
+                // remove padding top from body
+                document.body.style.paddingTop = '0';
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
