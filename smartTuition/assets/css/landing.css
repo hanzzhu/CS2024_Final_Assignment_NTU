@@ -6,7 +6,7 @@
     color: var(--white-color);
 }
 .w3l-main-slider .banner-view {
-    background: url(../img/banner1.png) no-repeat;
+    background: url(../img/tutor-lessons.png) no-repeat;
     background-size: cover;
     min-height: 600px;
     position: relative;
@@ -15,7 +15,7 @@
     align-items: center; }
   
   .w3l-main-slider .banner-top1 {
-    background: url(../img/banner2.jpg) no-repeat;
+    background: url(../img/tutor-student.jpg) no-repeat;
     background-size: cover; }
 
 
