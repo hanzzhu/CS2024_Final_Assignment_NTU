@@ -97,7 +97,7 @@
 }
 @media (max-width: 480px) {
   .register-photo .image-holder {
-    display:none;
+    display:none !important;
   }
   .register-photo form {
     border-radius: 20px!important;
