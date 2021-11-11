@@ -36,18 +36,7 @@
     font-weight: 600;
     color: var(--white-color);
 }
-.w3l-main-slider .banner-view {
-    background: url(../img/subject-science/science_banner1.png) no-repeat;
-    background-size: cover;
-    min-height: 600px;
-    position: relative;
-    z-index: 0;
-    display: grid;
-    align-items: center; }
 
-.w3l-main-slider .banner-top1 {
-    background: url(../img/subject-science/science_banner2.jpg) no-repeat;
-    background-size: cover; }
 .breadcrum-bg {
     background-size: cover;
     background-image: linear-gradient(to right, rgba(94, 40, 40, 0.49), rgba(56, 16, 16, 0.64)), url(../img/subject-englishmath/englishbanner.jpg);
