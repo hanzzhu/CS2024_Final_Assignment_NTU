@@ -30,24 +30,9 @@
     color: #3a3a3c !important;
 }
 /* ============ banner slider ============ */
-.w3l-main-slider .banner-info-bg h5 {
-    font-size: 50px !important;
-    line-height: 68px;
-    font-weight: 600;
-    color: var(--white-color);
-}
-.w3l-main-slider .banner-view {
-    background: url(../img/subject-science/bio_banner.jpg) no-repeat;
-    background-size: cover;
-    min-height: 600px;
-    position: relative;
-    z-index: 0;
-    display: grid;
-    align-items: center; }
-
 .breadcrum-bg {
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(37, 54, 23, 0.63), rgba(26, 52, 18, 0.68)), url(../img/subject-science/bio_banner3.jpg);
+    background-image: linear-gradient(to right, rgba(26, 37, 15, 0.7), rgba(19, 40, 14, 0.79)), url(../img/subject-science/bio_banner3.jpg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
     background-attachment: fixed; }
@@ -476,7 +461,12 @@ button.owl-next {
     background-color: transparent;
 }
 
-
+.w3l-testimonials {
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(26, 37, 15, 0.7), rgba(19, 40, 14, 0.79)), url(../img/subject-science/bio_banner3.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+    background-attachment: fixed; }
 
 
 
