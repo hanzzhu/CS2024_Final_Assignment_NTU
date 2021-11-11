@@ -43,6 +43,14 @@
 
 
 /* ============ top navigation ============ */
+.top-menu-top a {
+  text-decoration: none;
+}
+
+.top-menu-top a:hover {
+  text-decoration: underline;
+}
+
 .w3l-top-menu-1 .accounts li a {
   color: #3a3a3c !important;
   }
@@ -80,6 +88,8 @@
   -moz-box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.68);
   box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
 }
+
+
 /* ============ register form ============ */
 .register-photo .image-holder {
   display: table-cell !important;
