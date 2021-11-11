@@ -72,11 +72,11 @@
             padding: 50px;
         }
 
-        .contact .contact-form label:after {
+        .contact .contact-form label.required:after {
             content: " *";
             color: red;
         }
-
+        
 
         .contact .contact-title h3 {
             font-size: 36px;
@@ -284,19 +284,19 @@
                         <form id="form" name="form" method="post" action="#">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="name">Name</label>
+                                    <label for="name" class="required">Name</label>
                                     <input type="text" id="name" name="name" class="form-control" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="number">Phone number</label>
+                                    <label for="number" class="required">Phone number</label>
                                     <input type="number" min="0.00" class="form-control" required />
                                 </div>
                                 <div class="col-md-12 mt-20 mt-md-0">
-                                    <label for="email-address">Email</label>
+                                    <label for="email-address" class="required">Email</label>
                                     <input type="email" id='email-address' name="email" class="form-control" required>
                                 </div>
                                 <div class="col-md-12 mt-20">
-                                    <label for="form-text">Message</label>
+                                    <label for="form-text" class="required">Message</label>
                                     <textarea cols="30" rows="3" name="message" id="form-text"
                                         class="form-control pt-15" required></textarea>
                                 </div>
