@@ -1,6 +1,6 @@
 /* ============ banner slider ============ */
 .w3l-main-slider .banner-info-bg h5 {
-    font-size: 50px !important;
+    font-size: 50px ;
     line-height: 68px;
     font-weight: 600;
     color: var(--white-color);
