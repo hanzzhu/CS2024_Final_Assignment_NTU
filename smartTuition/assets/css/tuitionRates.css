@@ -60,7 +60,7 @@
   .register-photo .image-holder {
     display: table-cell;
     width: auto;
-    background: url(../../assets/img/happy-students.jpg);
+    background: url(../../assets/img/happy-students.webp);
     background-size: cover;
   }
   

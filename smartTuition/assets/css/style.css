@@ -94,7 +94,7 @@
 .register-photo .image-holder {
   display: table-cell !important;
   width: auto !important;
-  background: url(../../assets/img/happy-student-free-trial.jpg) !important;
+  background: url(../../assets/img/happy-student-free-trial.webp) !important;
   background-size: cover !important;
   border-radius:20px 0 0 20px !important;
 }
