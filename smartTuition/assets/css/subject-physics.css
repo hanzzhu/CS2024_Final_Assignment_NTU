@@ -32,7 +32,7 @@
 /* ============ banner slider ============ */
 .breadcrum-bg {
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(1, 30, 63, 0.62), rgba(3, 12, 93, 0.68)), url(../img/subject-science/physics_banner.jpg);
+    background-image: linear-gradient(to right, rgba(1, 30, 63, 0.62), rgba(3, 12, 93, 0.68)), url(../img/subject-science/physics_banner.webp);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
     background-attachment: fixed; }
@@ -381,7 +381,7 @@ button.owl-next {
 .register-photo .image-holder {
     display: table-cell;
     width: auto;
-    background: url(../../assets/img/subject-science/smilestudent.jpg);
+    background: url(../../assets/img/subject-science/smilestudent.webp);
     background-size: cover;
 }
 
