@@ -2829,7 +2829,6 @@ pre {
     max-width: 1140px; } }
 
 .row {
-   width: 100% !important;
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
