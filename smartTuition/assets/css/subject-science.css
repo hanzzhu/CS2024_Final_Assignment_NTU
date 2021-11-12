@@ -39,7 +39,7 @@
 
 .breadcrum-bg {
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(1, 30, 63, 0.62), rgba(3, 12, 93, 0.68)), url(../img/subject-science/science-banner3.jpg);
+    background-image: linear-gradient(to right, rgba(1, 30, 63, 0.62), rgba(3, 12, 93, 0.68)), url(../img/subject-science/science-banner.webp);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
     background-attachment: fixed; }
@@ -476,7 +476,7 @@ button.owl-next {
 }
 .w3l-testimonials {
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(31, 49, 75, 0.8), rgba(16, 23, 56, 0.81)), url(../img/subject-science/science-banner3.jpg);
+    background-image: linear-gradient(to right, rgba(31, 49, 75, 0.8), rgba(16, 23, 56, 0.81)), url(../img/subject-science/science-banner.webp);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
     background-attachment: fixed; }
