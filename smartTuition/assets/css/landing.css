@@ -50,6 +50,12 @@
   width: 60px !important;
   margin: auto;
 }
+/* ============ 3 columns for features below banner ============ */
+@media only screen and (max-width:768){
+  .w3l-feature-3 .middle-section {
+    display: contents !important;
+  }
+}
 
 /* ============ testimonials ============ */
 
