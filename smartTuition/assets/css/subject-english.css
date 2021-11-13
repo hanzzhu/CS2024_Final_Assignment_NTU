@@ -490,6 +490,27 @@ button.owl-next {
     }
 }
 
-
+@media screen and (max-width:800px) {
+    .column.center-align-self.col-md-3.offset-md-3.pr-lg-5 {
+        order: 2;
+        width: 100%;
+        margin-left: 0;
+    }
+    .w3l-index1 .column.ccont-left img {
+        width: 70%;
+    }
+    .editContent br {
+        display: none;
+    }
+    .heading.text-center.mx-auto br {
+        display: none;
+    }
+    .heading.text-center.mx-auto{
+        padding-top: 3rem !important;
+    }
+    .calltoaction-20.py-5.editContent {
+        padding-top: 2rem !important;
+    }
+}
 
 
