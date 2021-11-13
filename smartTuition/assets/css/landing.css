@@ -55,7 +55,12 @@
   .w3l-feature-3 .middle-section {
     display: contents !important;
   }
+  .w3l-feature-3 .three-grids-columns {
+    padding: 20px;
+  }
 }
+
+
 
 /* ============ testimonials ============ */
 
