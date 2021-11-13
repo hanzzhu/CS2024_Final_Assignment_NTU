@@ -512,5 +512,10 @@ button.owl-next {
         padding-top: 2rem !important;
     }
 }
-
+@media (max-width:800px){
+    .img-responsive{
+        max-width: 300px;
+        height: auto;
+    }
+}
 
