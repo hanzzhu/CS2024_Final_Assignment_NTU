@@ -121,6 +121,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
     box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
 }
 
+.w3l-bootstrap-header .navbar-toggler {
+  background-color: #FAAD17 !important;
+}
+
   /* ============ multilevel dropdown for navbar ============ */
   @media all and (min-width: 992px) {
 
