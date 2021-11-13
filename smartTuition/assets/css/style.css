@@ -120,7 +120,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     -moz-box-shadow: -1px 4px 22px -4px rgba(0, 0, 0, 0.68);
     box-shadow: -1px 4px 22px -4px rgb(0 0 0 / 68%);
 }
-
+  /* ============ mobile view hamburger menu button ============ */
 .w3l-bootstrap-header .navbar-toggler {
   background-color: #FAAD17 !important;
 }
@@ -378,6 +378,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
     line-height: 26px;
 }
 
+.footer .map-container {
+  margin-left: 10% ;
+  margin-right: 10%;
+}
+
 .footer .copyright {
     text-align: center;
     padding-top: 30px;
@@ -390,3 +395,4 @@ only screen and (min-device-pixel-ratio: 1.5) {
     font-size: 13px;
     color: #012970;
 }
+
