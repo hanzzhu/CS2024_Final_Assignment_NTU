@@ -23,6 +23,22 @@
     background-position: top center;
     
   }
+  @media (max-width:420px) {
+        
+    .w3l-main-slider .banner-top2 {
+        background: url(../img/promotion-banner-mobile.webp) no-repeat !important;
+        background-size: cover; 
+        background-position: center center !important;
+       
+
+    }
+    .promo-banner {
+      margin-top: 15rem !important;
+      margin-right: 5rem;
+  }
+
+
+}
   
 
 .heading {
