@@ -1,10 +1,38 @@
+/* ============ mobile view adjustments============ */
+@media screen and (max-width:800px) {
+  .w3l-about-breadcrum .breadcrum-bg {
+    background-attachment: unset!important; 
+  }
+  .w3l-content-with-photo-4.pt-5 {
+      padding-top: 0!important;
+  }
+  .w3l-content-with-photo-4 .py-md-5 {
+    padding-top: 0 !important;
+  }  
+  .w3l-content-with-photo-4 .cwp4-text.col-lg-6 {
+    padding-top: 3rem!important;
+      order: 2!important;
+  }
+    .teams-1 .team-grid .team-img:after {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%)!important;
+      transition-duration: 300ms!important;
+      transition-property: all!important;
+      transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1)!important;
+  }
+  .teams-1 .team-grid .team-info {
+      opacity: 1;
+  }
+}
+
 .w3l-about-breadcrum .breadcrum-bg {
     background-size: cover;
     background-image: linear-gradient(to right, rgba(0, 33, 71, 0.8), rgba(121, 201, 244, 0.8)), url(../img/students-banner.webp);
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center;
+    background-position: center top;
     background-attachment: fixed; }
 
+
+    
 /* ============ statistics============ */
 
 .w3l-stats {
