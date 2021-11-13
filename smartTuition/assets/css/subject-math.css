@@ -41,7 +41,7 @@
     background-image: linear-gradient(to right, rgba(31, 49, 75, 0.8), rgba(16, 23, 56, 0.81)), url(../img/subject-englishmath/math-banner.webp);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
-    background-attachment: fixed; }
+}
 .breadcrum-bg h2 {
     font-size: 44px;
     color: #fff;
@@ -478,7 +478,7 @@ button.owl-next {
     background-image: linear-gradient(to right, rgba(31, 49, 75, 0.8), rgba(16, 23, 56, 0.81)), url(../img/subject-englishmath/math-banner.webp);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
-    background-attachment: fixed; }
+}
 
 
 
