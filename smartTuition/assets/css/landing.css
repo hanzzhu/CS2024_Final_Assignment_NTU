@@ -228,13 +228,18 @@
 
 
 
-/*@media (max-width: 992px) {
+@media (max-width: 992px) {
   .owl-theme .owl-nav {
-    display: none !important; } }*/
+    display: none !important; } }
 
 @media (max-width: 992px) {
   .owl-theme .owl-nav {
-    display: block !important; } }
+    display: block !important; }
+
+.owl-theme .owl-nav [class*=owl-] {
+    background: none !important;
+  }
+}   
 
 @media (max-width: 568px) {
   .owl-carousel .owl-dots.disabled,
@@ -272,7 +277,7 @@
   font-size: 20px;
   margin: 0px;
   width: 46px;
-  background: rgba(255, 255, 255, 0.21);
+  background: #79c9f4;
   display: inline-block;
   cursor: pointer;
   transition: 0.3s ease-in-out;
