@@ -237,8 +237,13 @@
     display: block !important; }
 
 .owl-theme .owl-nav [class*=owl-] {
-    background: none !important;
+    background: rgba(0, 0, 0, 0.33) !important;
   }
+
+  .owl-theme .owl-nav [class*=owl-]:hover {
+    background: var(--primary-color) !important;
+  }  
+
 }   
 
 @media (max-width: 568px) {
