@@ -20,11 +20,10 @@
   .w3l-main-slider .banner-top2 {
     background: url(../img/promotion-banner.webp) no-repeat;
     background-size: cover; 
-    position: relative;
-    z-index: 0;
-    display: grid;
-    align-items: center;}
-
+    background-position: center center;;
+    width: 100%;
+    
+  }
   
 
 .heading {
