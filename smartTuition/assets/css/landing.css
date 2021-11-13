@@ -228,9 +228,13 @@
 
 
 
+/*@media (max-width: 992px) {
+  .owl-theme .owl-nav {
+    display: none !important; } }*/
+
 @media (max-width: 992px) {
   .owl-theme .owl-nav {
-    display: none !important; } }
+    display: block !important; } }
 
 @media (max-width: 568px) {
   .owl-carousel .owl-dots.disabled,
@@ -268,7 +272,7 @@
   font-size: 20px;
   margin: 0px;
   width: 46px;
-  background: #79c9f4;
+  background: rgba(255, 255, 255, 0.21);
   display: inline-block;
   cursor: pointer;
   transition: 0.3s ease-in-out;
