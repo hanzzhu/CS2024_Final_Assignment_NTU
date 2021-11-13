@@ -468,6 +468,13 @@ button.owl-next {
     background-position: center;
     background-attachment: fixed; }
 
-
+@media (max-width: 415px) {
+    .w3l-testimonials {
+        background-attachment: unset;
+    }
+    .breadcrum-bg{
+        background-attachment: unset;
+    }
+}
 
 
