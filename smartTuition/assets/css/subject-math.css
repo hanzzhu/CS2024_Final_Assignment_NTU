@@ -491,6 +491,12 @@ button.owl-next {
     }
      }
 
+@media (max-width:800px){
+    .img-responsive{
+        max-width: 300px;
+        height: auto;
+    }
+}
 
 
 

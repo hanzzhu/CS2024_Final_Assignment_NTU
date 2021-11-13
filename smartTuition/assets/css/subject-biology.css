@@ -54,7 +54,7 @@
     text-decoration: underline;
     color: #fff; }
 
-@media (max-width: 736px) {
+@media (max-width: 800px) {
     .breadcrum-bg h2 {
         font-size: 40px; } }
 
@@ -173,7 +173,7 @@
     margin-bottom: 0;
     opacity: 0.8; }
 
-@media (max-width: 415px) {
+@media (max-width: 800px) {
     .w3l-testimonials .testimonial {
         padding: 25px 15px; } }
 
@@ -192,7 +192,7 @@
     background: var(--secondary-color);
     opacity: .5; }
 
-@media (max-width: 667px) {
+@media (max-width: 800px) {
     .owl-two.owl-carousel.owl-theme .owl-dots {
         position: inherit;
         left: 0px;
@@ -265,11 +265,11 @@
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 800px) {
     .owl-theme .owl-nav {
         display: none !important; } }
 
-@media (max-width: 568px) {
+@media (max-width: 800px) {
     .owl-carousel .owl-dots.disabled,
     .owl-carousel .owl-nav.disabled {
         display: none; } }
@@ -400,7 +400,7 @@ button.owl-next {
     color: #505e6c;
 }
 
-@media (max-width:991px) {
+@media (max-width:800px) {
     .register-photo form {
         padding: 40px;
     }
@@ -468,7 +468,7 @@ button.owl-next {
     background-position: center;
     background-attachment: fixed; }
 
-@media (max-width: 415px) {
+@media (max-width: 800px) {
     .w3l-testimonials {
         background-attachment: unset;
     }
@@ -476,5 +476,10 @@ button.owl-next {
         background-attachment: unset;
     }
 }
-
+@media (max-width:800px){
+    .img-responsive{
+        max-width: 300px;
+        height: auto;
+    }
+}
 
