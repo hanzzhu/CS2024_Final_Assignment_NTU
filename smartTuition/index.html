@@ -177,9 +177,15 @@
         .banner-pb {
             padding-bottom: 40px;
         }
-
-        .spacer {
-            height: 40vh;
+        @media only screen and (min-width:300px) and (max-width:990px) {
+            .spacer {
+                height: 35vh;
+            }
+        }    
+        @media only screen and (min-width:991px) {
+                .spacer {
+                height: 75vh;
+            }
         }
 
         /*.promo-banner {
